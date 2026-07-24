@@ -4,6 +4,19 @@
 
 ---
 
+<p align="center">
+
+🏠 [README](../README.md) •
+🚀 [Installation](INSTALLATION.md) •
+🎮 **Usage** •
+✨ [Features](FEATURES.md) •
+📂 [Project Structure](PROJECT_STRUCTURE.md)
+
+</p>
+
+---
+
+
 # 📖 Overview
 
 Fortnite Sprite Locker is designed to be simple enough for new users while providing advanced features for dedicated collectors.

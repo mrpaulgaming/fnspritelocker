@@ -4,6 +4,18 @@
 
 ---
 
+<p align="center">
+
+🏠 [README](../README.md) •
+🚀 [Installation](INSTALLATION.md) •
+🎮 [Usage](USAGE.md) •
+✨ **Features** •
+📂 [Project Structure](PROJECT_STRUCTURE.md)
+
+</p>
+
+---
+
 ## 📖 Overview
 
 Fortnite Sprite Locker is a fully offline web application designed to help Fortnite players organize, track and share their Sprite collection from **Chapter 7 • Season 3**.

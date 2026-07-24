@@ -6,11 +6,20 @@
 
 <p align="center">
 
+<p align="center">
+
 🏠 [README](../README.md) •
 🚀 [Installation](INSTALLATION.md) •
 🎮 [Usage](USAGE.md) •
 ✨ [Features](FEATURES.md) •
-⚙️ **Technical**
+📤 [Share & Export](SHARE_AND_EXPORT.md) •
+🎨 [Customization](CUSTOMIZATION.md) •
+📂 [Project Structure](PROJECT_STRUCTURE.md) •
+⚙️ **Technical** •
+❓ [FAQ](FAQ.md) •
+🗺️ [Roadmap](ROADMAP.md) •
+
+</p>
 
 </p>
 
