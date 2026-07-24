@@ -1,9 +1,8 @@
-# ✨ Features
+# 🎮 Fortnite Sprite Locker
 
-> Comprehensive overview of every feature available in **Fortnite Sprite Locker**.
+> **Documentation • Features Documentation**
 
 ---
-
 <p align="center">
 
 🏠 [README](../README.md) •

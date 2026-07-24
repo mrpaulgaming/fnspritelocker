@@ -1,6 +1,6 @@
-# 🎮 Usage Guide
+# 🎮 Fortnite Sprite Locker
 
-> Learn how to get the most out of **Fortnite Sprite Locker**, from managing your collection to exporting and sharing your progress.
+> **Documentation • Usage Documentation**
 
 ---
 
