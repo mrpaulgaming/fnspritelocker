@@ -21,18 +21,18 @@ Track every Sprite, unlock every variant, monitor your progress and share your c
 
 ## 📑 Table of Contents
 
-- [📸 Screenshots](#-screenshots)
-- [✨ Features](#-features)
-- [🚀 Quick Start](#-quick-start)
-- [📚 Documentation](#-documentation)
-- [🎯 Use Cases](#-use-cases)
-- [🛠️ Built With](#️-built-with)
-- [📂 Project Structure](#-project-structure)
-- [🤖 AI Assistance](#-ai-assistance)
-- [🗺️ Roadmap](#️-roadmap)
-- [🤝 Contributing](#-contributing)
-- [📄 License](#-license)
-- [📧 Contact](#-contact)
+- 📸 [Screenshots](#-screenshots)
+- ✨ [Features](#-features)
+- 🚀 [Quick Start](#-quick-start)
+- 📚 [Documentation](#-documentation)
+- 🎯 [Use Cases](#-use-cases)
+- 🛠️ [Built With](#️-built-with)
+- 📂 [Project Structure](#-project-structure)
+- 🤖 [AI Assistance](#-ai-assistance)
+- 🗺️ [Roadmap](#️-roadmap)
+- 🤝 [Contributing](#-contributing)
+- 📄 [License](#-license)
+- 📧 [Contact](#-contact)
 
 ---
 
