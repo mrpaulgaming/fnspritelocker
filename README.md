@@ -1,22 +1,5 @@
 # 🎮 Fortnite Sprite Locker
 
-<div align="center">
-
-![Version](https://img.shields.io/badge/version-2.0-blue?style=for-the-badge)
-![HTML5](https://img.shields.io/badge/HTML5-E34F26?style=for-the-badge&logo=html5&logoColor=white)
-![CSS3](https://img.shields.io/badge/CSS3-1572B6?style=for-the-badge&logo=css3&logoColor=white)
-![JavaScript](https://img.shields.io/badge/JavaScript-F7DF1E?style=for-the-badge&logo=javascript&logoColor=black)
-![License](https://img.shields.io/badge/License-MIT-green?style=for-the-badge)
-![Offline](https://img.shields.io/badge/Offline-Ready-blueviolet?style=for-the-badge)
-
-### The ultimate Fortnite Chapter 7 • Season 3 Sprite Collection Tracker
-
-Track every Sprite, unlock every variant, monitor your progress and share your collection — all offline.
-
-**Created by Paolo**
-
-</div>
-
 ---
 
 <p align="center">
@@ -33,6 +16,25 @@ Track every Sprite, unlock every variant, monitor your progress and share your c
 🗺️ [Roadmap](docs/ROADMAP.md) •
 
 </p>
+
+---
+
+<div align="center">
+
+![Version](https://img.shields.io/badge/version-2.0-blue?style=for-the-badge)
+![HTML5](https://img.shields.io/badge/HTML5-E34F26?style=for-the-badge&logo=html5&logoColor=white)
+![CSS3](https://img.shields.io/badge/CSS3-1572B6?style=for-the-badge&logo=css3&logoColor=white)
+![JavaScript](https://img.shields.io/badge/JavaScript-F7DF1E?style=for-the-badge&logo=javascript&logoColor=black)
+![License](https://img.shields.io/badge/License-MIT-green?style=for-the-badge)
+![Offline](https://img.shields.io/badge/Offline-Ready-blueviolet?style=for-the-badge)
+
+### The ultimate Fortnite Chapter 7 • Season 3 Sprite Collection Tracker
+
+Track every Sprite, unlock every variant, monitor your progress and share your collection — all offline.
+
+**Created by Paolo**
+
+</div>
 
 ---
 
