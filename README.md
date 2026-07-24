@@ -19,6 +19,23 @@ Track every Sprite, unlock every variant, monitor your progress and share your c
 
 ---
 
+<p align="center">
+
+🏠 **README** •
+🚀 [Installation](docs/INSTALLATION.md) •
+🎮 [Usage](docs/USAGE.md) •
+✨ [Features](docs/FEATURES.md) •
+📤 [Share & Export](docs/SHARE_AND_EXPORT.md) •
+🎨 [Customization](docs/CUSTOMIZATION.md) •
+📂 [Project Structure](docs/PROJECT_STRUCTURE.md) •
+⚙️ [Technical](docs/TECHNICAL.md) •
+❓ [FAQ](docs/FAQ.md) •
+🗺️ [Roadmap](docs/ROADMAP.md) •
+
+</p>
+
+---
+
 ## 📑 Table of Contents
 
 - 📸 [Screenshots](#-screenshots)
