@@ -453,5 +453,3 @@ Highlights include:
 - Clear information hierarchy
 
 The goal is to make managing a Sprite collection as enjoyable as collecting the Sprites themselves.
-
----

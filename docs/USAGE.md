@@ -368,15 +368,6 @@ Verify that every required image has loaded before exporting.
 
 ---
 
-# 📖 Related Documentation
-
-- ✨ FEATURES.md
-- 📤 SHARE_AND_EXPORT.md
-- 🎨 CUSTOMIZATION.md
-- ⚙️ TECHNICAL.md
-
----
-
 <div align="center">
 
 **Happy Sprite Hunting! 🎮**

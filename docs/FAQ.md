@@ -184,15 +184,6 @@ Restore your latest JSON backup if available.
 
 ---
 
-# 📚 Related Documentation
-
-- 🚀 Installation
-- 🎮 Usage
-- 📤 Share & Export
-- 🎨 Customization
-
----
-
 <div align="center">
 
 **Still have questions? Open a GitHub Issue!**

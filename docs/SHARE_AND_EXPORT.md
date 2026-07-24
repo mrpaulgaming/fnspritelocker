@@ -315,15 +315,6 @@ If no backup exists, LocalStorage may have been cleared.
 
 ---
 
-# 📚 Related Documentation
-
-- 🎮 [Usage](USAGE.md)
-- ✨ [Features](FEATURES.md)
-- 🎨 [Customization](CUSTOMIZATION.md)
-- ⚙️ [Technical](TECHNICAL.md)
-
----
-
 <div align="center">
 
 **Your collection. Your progress. Your backup.**

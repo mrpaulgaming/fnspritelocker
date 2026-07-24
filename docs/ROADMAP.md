@@ -92,14 +92,6 @@ Every suggestion is appreciated.
 
 ---
 
-# 📚 Related Documentation
-
-- ✨ Features
-- ⚙️ Technical
-- 📝 Changelog
-
----
-
 <div align="center">
 
 **Every great project starts with a roadmap.**

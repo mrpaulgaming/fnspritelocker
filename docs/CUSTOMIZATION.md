@@ -354,15 +354,6 @@ If a variant button appears but no image loads:
 
 ---
 
-# 📚 Related Documentation
-
-- ✨ [Features](FEATURES.md)
-- 🎮 [Usage](USAGE.md)
-- 📂 [Project Structure](PROJECT_STRUCTURE.md)
-- ⚙️ [Technical](TECHNICAL.md)
-
----
-
 <div align="center">
 
 **Customize it. Expand it. Make it your own.**

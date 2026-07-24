@@ -371,15 +371,6 @@ Following the same workflow helps reduce bugs and keeps the project consistent.
 
 ---
 
-# 📚 Related Documentation
-
-- 🚀 [Installation](INSTALLATION.md)
-- 🎨 [Customization](CUSTOMIZATION.md)
-- ⚙️ [Technical](TECHNICAL.md)
-- ✨ [Features](FEATURES.md)
-
----
-
 <div align="center">
 
 **A well-organized project is easier to understand, maintain and expand.**
