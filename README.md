@@ -38,11 +38,9 @@ Track every Sprite, unlock every variant, monitor your progress and share your c
 
 # 📸 Screenshots
 
-> *(Replace these placeholders with real screenshots.)*
-
 | Locker View | Grid View |
 |--------------|-----------|
-| ![](images/locker-view.png) | ![](images/grid-view.png) |
+| ![](screenshots/locker-view.png) | ![](screenshots/grid-view.png) |
 
 ---
 
