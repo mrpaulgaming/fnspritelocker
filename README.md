@@ -36,11 +36,21 @@ Track every Sprite, unlock every variant, monitor your progress and share your c
 
 ---
 
-# 📸 Screenshots
+## 📸 Screenshots
 
-| Locker View | Grid View |
-|--------------|-----------|
-| ![](screenshots/locker-view.png) | ![](screenshots/grid-view.png) |
+### Main Interface
+
+![](screenshots/locker-view.png)
+
+---
+
+| Grid View | Export | Share |
+|-----------|--------|-------|
+| ![](screenshots/grid-view.png) | ![](screenshots/export-menu.png) | ![](screenshots/share-menu.png) |
+
+| Filters | Statistics |
+|----------|------------|
+| ![](screenshots/filters.png) | ![](screenshots/stats.png)
 
 ---
 
