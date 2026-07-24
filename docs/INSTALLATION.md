@@ -10,7 +10,12 @@
 🚀 **Installation** •
 🎮 [Usage](USAGE.md) •
 ✨ [Features](FEATURES.md) •
-📂 [Project Structure](PROJECT_STRUCTURE.md)
+📤 [Share & Export](SHARE_AND_EXPORT.md) •
+🎨 [Customization](CUSTOMIZATION.md) •
+📂 [Project Structure](PROJECT_STRUCTURE.md) •
+⚙️ [Technical](TECHNICAL.md) •
+❓ [FAQ](FAQ.md) •
+🗺️ [Roadmap](ROADMAP.md)
 
 </p>
 

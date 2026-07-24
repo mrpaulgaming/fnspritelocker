@@ -6,8 +6,6 @@
 
 <p align="center">
 
-<p align="center">
-
 🏠 [README](../README.md) •
 🚀 [Installation](INSTALLATION.md) •
 🎮 [Usage](USAGE.md) •
@@ -17,9 +15,7 @@
 📂 [Project Structure](PROJECT_STRUCTURE.md) •
 ⚙️ **Technical** •
 ❓ [FAQ](FAQ.md) •
-🗺️ [Roadmap](ROADMAP.md) •
-
-</p>
+🗺️ [Roadmap](ROADMAP.md)
 
 </p>
 

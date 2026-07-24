@@ -9,7 +9,13 @@
 🏠 [README](../README.md) •
 🚀 [Installation](INSTALLATION.md) •
 🎮 [Usage](USAGE.md) •
-❓ **FAQ**
+✨ [Features](FEATURES.md) •
+📤 [Share & Export](SHARE_AND_EXPORT.md) •
+🎨 [Customization](CUSTOMIZATION.md) •
+📂 [Project Structure](PROJECT_STRUCTURE.md) •
+⚙️ [Technical](TECHNICAL.md) •
+❓ **FAQ** •
+🗺️ [Roadmap](ROADMAP.md)
 
 </p>
 
