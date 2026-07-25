@@ -50,7 +50,6 @@ Track every Sprite, unlock every variant, monitor your progress and share your c
 - 🤖 [AI Assistance](#-ai-assistance)
 - 🗺️ [Roadmap](#️-roadmap)
 - 🤝 [Contributing](#-contributing)
-- 📄 [License](#-license)
 - 📧 [Contact](#-contact)
 
 ---
@@ -131,7 +130,6 @@ Detailed documentation is available inside the **docs/** folder.
 - ⚙️ TECHNICAL.md
 - ❓ FAQ.md
 - 🗺️ ROADMAP.md
-- 📝 CHANGELOG.md
 
 ---
 
@@ -233,16 +231,15 @@ Contributions are welcome!
 
 Released under the **MIT License**.
 
-See the **LICENSE** file for more information.
-
 ---
 
 # 📧 Contact
 
 **Developer:** Paolo
 
-- 📺 YouTube: **@MrPaulGaming**
-- 🐞 Issues: GitHub Issues
+- 📺 YouTube: **[@MrPaulGaming](https://www.youtube.com/@MrPaulGaming)**
+- 🐙 GitHub: **[paolosecchiari/fnspritelocker](https://github.com/paolosecchiari/fnspritelocker)**
+- 🐞 Issues: [GitHub Issues](https://github.com/paolosecchiari/fnspritelocker/issues)
 
 ---
 
