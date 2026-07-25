@@ -227,12 +227,6 @@ Contributions are welcome!
 
 ---
 
-# 📄 License
-
-Released under the **MIT License**.
-
----
-
 # 📧 Contact
 
 **Developer:** Paolo
