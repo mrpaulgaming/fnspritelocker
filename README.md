@@ -81,6 +81,7 @@ Track every Sprite, unlock every variant, monitor your progress and share your c
 | 📊 Statistics | Real-time completion tracking |
 | 🔲 Locker & Grid View | Two different viewing modes |
 | 🔍 Filters & Search | Find any Sprite instantly |
+| 📋 Sort & Group | Sort by name, rarity, completion or last updated |
 | 📤 PNG Export | Export beautiful collection images |
 | 💾 JSON Backup | Import and export your progress |
 | 🔗 Share Collection | Share your collection with one URL |
