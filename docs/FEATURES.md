@@ -254,6 +254,34 @@ The header remains accessible throughout the entire application.
 
 ---
 
+## 📋 Sort & Group
+
+The application includes a powerful sorting and grouping system.
+
+### Sort Options
+
+| Option | Description |
+|--------|-------------|
+| Name (A-Z) | Alphabetical order |
+| Name (Z-A) | Reverse alphabetical order |
+| Rarity (rarest first) | Mythic → Rare |
+| Rarity (rarest last) | Rare → Mythic |
+| Completion (high first) | Most completed first |
+| Completion (low first) | Least completed first |
+| Last updated | Most recently updated first |
+
+### Group by Rarity
+
+When enabled, Sprites are grouped by rarity in the following order:
+
+**Rare → Epic → Legendary → Mythic**
+
+Within each rarity group, the selected sort order is applied.
+
+This makes it easy to see which Sprites you're missing from each rarity tier.
+
+---
+
 ## 📂 Sidebar
 
 The sidebar contains the complete Sprite list.
@@ -324,6 +352,17 @@ Variant buttons provide quick access to every available appearance.
 
 Supported colors include:
 
+| Variant | Description |
+|----------|-------------|
+| Basic | Default Sprite |
+| Gold | Golden version |
+| Gummy | Candy-themed version |
+| Galaxy | Cosmic appearance |
+| Holofoil | Holographic finish |
+| Cube | Cube-inspired version |
+| Gem | Crystal variant |
+| Quack | Duck-themed version |
+
 | Variant | Button Color |
 |----------|--------------|
 | Basic | Gray |
@@ -333,6 +372,7 @@ Supported colors include:
 | Holofoil | Cyan |
 | Cube | Purple |
 | Gem | White |
+| Quack | Purple |
 
 Every button updates automatically depending on ownership.
 

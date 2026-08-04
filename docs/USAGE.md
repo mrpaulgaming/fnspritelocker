@@ -198,6 +198,76 @@ Search is not case-sensitive.
 
 ---
 
+# 📋 Sorting & Grouping
+
+The application includes a comprehensive sorting system that helps you organize your collection.
+
+## Sorting Options
+
+Use the **"Sort by"** dropdown to choose how Sprites are ordered.
+
+| Option | Description |
+|--------|-------------|
+| Name (A-Z) | Alphabetical order |
+| Name (Z-A) | Reverse alphabetical order |
+| Rarity (rarest first) | Mythic → Legendary → Epic → Rare |
+| Rarity (rarest last) | Rare → Epic → Legendary → Mythic |
+| Completion (high first) | Most completed Sprites first |
+| Completion (low first) | Least completed Sprites first |
+| Last updated | Most recently updated Sprites first |
+
+The selected sort order is applied immediately to both Locker and Grid views.
+
+---
+
+## Group by Rarity
+
+Enable **"Group by Rarity"** to organize Sprites by their rarity tier.
+
+When enabled, Sprites are grouped in this order:
+
+**Rare → Epic → Legendary → Mythic**
+
+Within each rarity group, the selected sort order is still applied.
+
+This makes it easy to see which Sprites you're missing from each rarity.
+
+Example:
+
+```text
+RARE
+  ├── Water Sprite
+  ├── Earth Sprite
+  └── Fire Sprite
+
+EPIC
+  ├── Duck Sprite
+  ├── Ghost Sprite
+  └── Demon Sprite
+
+LEGENDARY
+  ├── Dream Sprite
+  ├── Punk Sprite
+  └── Boss Sprite
+
+MYTHIC
+  ├── Zero Point Sprite
+  ├── Grim Sprite
+  └── Batman Sprite
+
+---
+
+**Aggiorna la tabella dei filtri (rimuovi "Hide Completed" e "Show Unreleased"):**
+
+```markdown
+| Filter | Description |
+|----------|-------------|
+| Rarity | Display specific rarities |
+| Hide Mastered | Hide mastered Sprites |
+| Group by Rarity | Organize the collection by rarity tier |
+
+---
+
 # 🎯 Filters
 
 Filters allow you to display only the Sprites you're interested in.
@@ -365,6 +435,12 @@ Some messaging applications may shorten long links.
 ## Export fails
 
 Verify that every required image has loaded before exporting.
+
+---
+
+### Sort to find missing items
+
+Use "Completion (low first)" to quickly see which Sprites need the most work.
 
 ---
 
