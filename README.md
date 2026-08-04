@@ -13,7 +13,7 @@
 📂 [Project Structure](docs/PROJECT_STRUCTURE.md) •
 ⚙️ [Technical](docs/TECHNICAL.md) •
 ❓ [FAQ](docs/FAQ.md) •
-🗺️ [Roadmap](docs/ROADMAP.md) •
+🗺️ [Roadmap](docs/ROADMAP.md)
 
 </p>
 
