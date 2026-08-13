@@ -90,6 +90,26 @@ Track every Sprite, unlock every variant, monitor your progress and share your c
 
 ---
 
+## ⌨️ Keyboard Shortcuts (only available on PC)
+
+| Shortcut | Action |
+|----------|--------|
+| `←` / `→` | Navigate between sprites |
+| `Space` | Toggle the selected variant (acquire/remove) |
+| `M` | Play / Pause music |
+| `Shift + M` | Toggle “Mastered” for the current sprite |
+| `G` | Toggle Grid / Locker view |
+| `S` | Focus the search bar |
+| `E` | Open the Export menu |
+| `J` | Open the Sprite Garden |
+| `Esc` | Close any modal or blur the input field |
+| `↑ ↑ ↓ ↓ ← → ← → b a` | Quickly switch seasons |
+| `?` | Show this shortcuts menu |
+
+All shortcuts are available from anywhere in the app (except when typing in input fields).
+
+---
+
 # 🚀 Quick Start
 
 ## Clone the repository
@@ -176,15 +196,34 @@ Detailed documentation is available inside the **docs/** folder.
 ```text
 fortnite-sprite-locker/
 │
-├── index.html
-├── README.md
-├── docs/
+├── index.html                 # Main application (all-in-one)
+├── README.md                  # This file
+├── qr-code.png                # Static QR code image for the modal
 │
-└── assets/
-    ├── sprites/
-    ├── icons/
-    ├── ui/
-    └── audios/
+├── assets/                    # All media resources
+│   ├── sprites/               # Sprite images (PNG, named by ID)
+│   ├── icons/                 # Icons (logo, GitHub, etc.)
+│   ├── ui/                    # UI elements (background, mastered crown, dust)
+│   └── audios/                # Background music (lobby-music.mp3)
+│
+├── docs/                      # Detailed documentation (Markdown)
+│   ├── FEATURES.md
+│   ├── INSTALLATION.md
+│   ├── USAGE.md
+│   ├── SHARE_AND_EXPORT.md
+│   ├── CUSTOMIZATION.md
+│   ├── PROJECT_STRUCTURE.md
+│   ├── TECHNICAL.md
+│   ├── FAQ.md
+│   └── ROADMAP.md
+│
+└── screenshots/               # Screenshots used in the README
+    ├── locker-view.png
+    ├── grid-view.png
+    ├── export-menu.png
+    ├── share-menu.png
+    ├── filters.png
+    └── stats.png
 ```
 
 ---
