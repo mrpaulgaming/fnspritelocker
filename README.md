@@ -42,7 +42,7 @@ Track every Sprite, unlock every variant, monitor your progress and share your c
 
 **Created by Paolo**
 
-**[👉 Try it now!](https://fnspritelocker.vercel.app/)**
+**👉 [Try it now!](https://fnspritelocker.vercel.app/)**
 
 ---
 
