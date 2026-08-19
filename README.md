@@ -34,6 +34,8 @@ Track every Sprite, unlock every variant, monitor your progress and share your c
 
 **Created by Paolo**
 
+[Vercel](https://fnspritelocker.vercel.app/)      [GitHub Pages](https://paolosecchiari.github.io/fnspritelocker/)
+
 </div>
 
 ---
