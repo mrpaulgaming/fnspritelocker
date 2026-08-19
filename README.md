@@ -105,6 +105,7 @@ Track every Sprite, unlock every variant, monitor your progress and share your c
 | `Shift + M` | Toggle “Mastered” for the current sprite |
 | `G` | Toggle Grid / Locker view |
 | `S` | Focus the search bar |
+| `I` | Open Statistics |
 | `E` | Open the Export menu |
 | `J` | Open the Sprite Garden |
 | `Esc` | Close any modal or blur the input field |
