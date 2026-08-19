@@ -21,11 +21,7 @@
 
 <div align="center">
 
-<p align="center">
-  <img src="https://img.shields.io/github/stars/paolosecchiari/fnspritelocker?style=social">
-  <img src="https://img.shields.io/github/forks/paolosecchiari/fnspritelocker?style=social">
-  <img src="https://img.shields.io/github/watchers/paolosecchiari/fnspritelocker?style=social">
-</p>
+# 🎮 Fortnite Sprite Locker
 
 ![Version](https://img.shields.io/badge/version-2.1-blue?style=for-the-badge)
 ![HTML5](https://img.shields.io/badge/HTML5-E34F26?style=for-the-badge&logo=html5&logoColor=white)
@@ -35,20 +31,27 @@
 ![Offline](https://img.shields.io/badge/Offline-Ready-blueviolet?style=for-the-badge)
 
 <p align="center">
-  <img src="assets/ui/banner.png" width="800">
+  <img src="https://img.shields.io/github/stars/paolosecchiari/fnspritelocker?style=social"> 
+  <img src="https://img.shields.io/github/forks/paolosecchiari/fnspritelocker?style=social"> 
+  <img src="https://img.shields.io/github/watchers/paolosecchiari/fnspritelocker?style=social">
 </p>
 
-### The ultimate Fortnite Chapter 7 • Season 3 Sprite Collection Tracker
+### The ultimate Fortnite Chapter 7 Sprite Collection Tracker
 
 Track every Sprite, unlock every variant, monitor your progress and share your collection — all offline.
 
 **Created by Paolo**
 
-**🌐 Available at:**
-[![Vercel](https://img.shields.io/badge/Vercel-000000?style=for-the-badge&logo=vercel&logoColor=white)](https://fnspritelocker.vercel.app/)
-[![GitHub Pages](https://img.shields.io/badge/GitHub%20Pages-222222?style=for-the-badge&logo=githubpages&logoColor=white)](https://mrpaulgaming.github.io/fnspritelocker/)
+**[👉 Try it now!](https://fnspritelocker.vercel.app/)**
 
+---
+
+## 🌐 Live Demos
+
+[![Vercel](https://img.shields.io/badge/Vercel-000000?style=for-the-badge&logo=vercel&logoColor=white)](https://fnspritelocker.vercel.app/)
+[![GitHub Pages](https://img.shields.io/badge/GitHub%20Pages-222222?style=for-the-badge&logo=githubpages&logoColor=white)](https://paolosecchiari.github.io/fnspritelocker/)
 > 💡 **Tip:** Both versions are kept in sync. Use the one that works best on your device!
+
 </div>
 
 ---
