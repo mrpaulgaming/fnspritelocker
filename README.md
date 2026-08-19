@@ -34,9 +34,18 @@ Track every Sprite, unlock every variant, monitor your progress and share your c
 
 **Created by Paolo**
 
-[Vercel](https://fnspritelocker.vercel.app/)      [GitHub Pages](https://paolosecchiari.github.io/fnspritelocker/)
-
 </div>
+
+---
+
+## 🌐 Live Demos
+
+| Version | URL |
+|---------|-----|
+| **GitHub Pages** (stable) | [paolosecchiari.github.io/fnspritelocker](https://paolosecchiari.github.io/fnspritelocker/) |
+| **Vercel** (latest) | [fnspritelocker.vercel.app](https://fnspritelocker.vercel.app/) |
+
+> 💡 **Tip:** Both versions are kept in sync. Use the one that works best on your device!
 
 ---
 
