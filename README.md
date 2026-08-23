@@ -108,7 +108,7 @@ Track every Sprite, unlock every variant, monitor your progress and share your c
 
 ---
 
-## ⌨️ Keyboard Shortcuts (only available on PC)
+## ⌨️ Shortcuts (available on both PC and mobile, only PC ones here below)
 
 | Shortcut | Action |
 |----------|--------|
