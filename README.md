@@ -23,7 +23,7 @@
 
 # 🎮 Fortnite Sprite Locker
 
-![Version](https://img.shields.io/badge/version-2.4-blue?style=for-the-badge)
+![Version](https://img.shields.io/badge/version-2.8-blue?style=for-the-badge)
 ![HTML5](https://img.shields.io/badge/HTML5-E34F26?style=for-the-badge&logo=html5&logoColor=white)
 ![CSS3](https://img.shields.io/badge/CSS3-1572B6?style=for-the-badge&logo=css3&logoColor=white)
 ![JavaScript](https://img.shields.io/badge/JavaScript-F7DF1E?style=for-the-badge&logo=javascript&logoColor=black)
@@ -50,7 +50,7 @@ Track every Sprite, unlock every variant, monitor your progress and share your c
 
 [![Vercel](https://img.shields.io/badge/Vercel-000000?style=for-the-badge&logo=vercel&logoColor=white)](https://fnspritelocker.vercel.app/)
 [![GitHub Pages](https://img.shields.io/badge/GitHub%20Pages-222222?style=for-the-badge&logo=githubpages&logoColor=white)](https://mrpaulgaming.github.io/fnspritelocker/)
-> 💡 **Tip:** Both versions are kept in sync. Use the one that works best on your device!
+> 💡 **Tip:** They works exactly the same, use the one that works best on your device!
 
 </div>
 
@@ -84,9 +84,9 @@ Track every Sprite, unlock every variant, monitor your progress and share your c
 |-----------|--------|-------|
 | ![](screenshots/grid-view.png) | ![](screenshots/export-menu.png) | ![](screenshots/share-menu.png) |
 
-| Filters | Statistics |
+| Filters and more | Statistics |
 |----------|------------|
-| ![](screenshots/filters.png) | ![](screenshots/stats.png)
+| ![](screenshots/filters.png) ![](screenshots/buttons.png) | ![](screenshots/stats.png)
 
 ---
 
@@ -95,7 +95,7 @@ Track every Sprite, unlock every variant, monitor your progress and share your c
 | Feature | Description |
 |---------|-------------|
 | 🗂️ Collection Management | Track every Sprite and variant |
-| ⭐ Mastery System | Mark completed Sprites with a crown |
+| ⭐ Mastery System | Mark completed Sprites and their variations with a crown |
 | 📊 Statistics | Real-time completion tracking |
 | 🔲 Locker & Grid View | Two different viewing modes |
 | 🔍 Filters & Search | Find any Sprite instantly |
@@ -105,6 +105,11 @@ Track every Sprite, unlock every variant, monitor your progress and share your c
 | 🔗 Share Collection | Share your collection with one URL |
 | 🎵 Background Music | Optional Fortnite lobby music |
 | 📱 Responsive Design | Desktop, tablet and mobile support |
+| **🆕 Season 4 (Override)** | Full support for Season 4 Sprites and variants |
+| **🆕 Sprite Garden** | A beautiful, interactive garden showcasing all your collected Sprites |
+| **🆕 Lobby Codes S4** | View and copy special codes to unlock exclusive rewards |
+| **🆕 Interactive Map** | Explore the map with markers for Sprite Chests and Cheat Code Locators |
+| **🆕 Retro Mode** | Activate a pixel-art style interface (Season 4 only) |
 
 ---
 
@@ -121,6 +126,7 @@ Track every Sprite, unlock every variant, monitor your progress and share your c
 | `I` | Open Statistics |
 | `E` | Open the Export menu |
 | `J` | Open the Sprite Garden |
+| `K` | Open map |
 | `Esc` | Close any modal or blur the input field |
 | `↑ ↑ ↓ ↓ ← → ← → b a` | Quickly switch seasons |
 | `?` | Show this shortcuts menu |
@@ -243,6 +249,7 @@ fortnite-sprite-locker/
     ├── share-menu.png
     ├── filters.png
     └── stats.png
+	└── buttons.png
 ```
 
 ---
@@ -268,8 +275,8 @@ Final implementation and project design were manually developed and reviewed.
 | PDF Export | 📋 Planned |
 | Achievement System | 📋 Planned |
 | Cloud Backup | 📋 Planned |
-| Multi-season Support | 💡 Idea |
-| Mobile App | 💡 Idea |
+| Multi-season Support | ✅ Done |
+| Mobile App | ✅ (Partly) Done |
 
 See **ROADMAP.md** for the complete roadmap.
 
