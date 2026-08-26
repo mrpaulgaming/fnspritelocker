@@ -23,7 +23,7 @@
 
 # 🎮 Fortnite Sprite Locker
 
-![Version](https://img.shields.io/badge/version-2.8-blue?style=for-the-badge)
+![Version](https://img.shields.io/badge/version-3.4-blue?style=for-the-badge)
 ![HTML5](https://img.shields.io/badge/HTML5-E34F26?style=for-the-badge&logo=html5&logoColor=white)
 ![CSS3](https://img.shields.io/badge/CSS3-1572B6?style=for-the-badge&logo=css3&logoColor=white)
 ![JavaScript](https://img.shields.io/badge/JavaScript-F7DF1E?style=for-the-badge&logo=javascript&logoColor=black)
@@ -110,6 +110,8 @@ Track every Sprite, unlock every variant, monitor your progress and share your c
 | **🆕 Lobby Codes S4** | View and copy special codes to unlock exclusive rewards |
 | **🆕 Interactive Map** | Explore the map with markers for Sprite Chests and Cheat Code Locators |
 | **🆕 Retro Mode** | Activate a pixel-art style interface (Season 4 only) |
+| **🆕 Sprite Dust Calculator** | Plan your resummons with cost calculation and missing dust tracking |
+| **🆕 Mastery Pod** | Visualize all your mastered sprites in a special back bling view |
 
 ---
 
@@ -127,6 +129,8 @@ Track every Sprite, unlock every variant, monitor your progress and share your c
 | `E` | Open the Export menu |
 | `J` | Open the Sprite Garden |
 | `K` | Open map |
+| `P` | Open Mastery Pod |
+| `C` | Open Sprite Dust Calculator |
 | `Esc` | Close any modal or blur the input field |
 | `↑ ↑ ↓ ↓ ← → ← → b a` | Quickly switch seasons |
 | `?` | Show this shortcuts menu |
