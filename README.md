@@ -23,7 +23,7 @@
 
 # 🎮 Fortnite Sprite Locker
 
-![Version](https://img.shields.io/badge/version-4.6-blue?style=for-the-badge)
+![Version](https://img.shields.io/badge/version-5.3-blue?style=for-the-badge)
 ![HTML5](https://img.shields.io/badge/HTML5-E34F26?style=for-the-badge&logo=html5&logoColor=white)
 ![CSS3](https://img.shields.io/badge/CSS3-1572B6?style=for-the-badge&logo=css3&logoColor=white)
 ![JavaScript](https://img.shields.io/badge/JavaScript-F7DF1E?style=for-the-badge&logo=javascript&logoColor=black)
@@ -105,13 +105,15 @@ Track every Sprite, unlock every variant, monitor your progress and share your c
 | 🔗 Share Collection | Share your collection with one URL |
 | 🎵 Background Music | Optional Fortnite lobby music |
 | 📱 Responsive Design | Desktop, tablet and mobile support |
-| **🆕 Season 4 (Override)** | Full support for Season 4 Sprites and variants |
-| **🆕 Sprite Garden** | A beautiful, interactive garden showcasing all your collected Sprites |
-| **🆕 Lobby Codes S4** | View and copy special codes to unlock exclusive rewards |
-| **🆕 Interactive Map** | Explore the map with markers for Sprite Chests and Cheat Code Locators |
-| **🆕 Retro Mode** | Activate a pixel-art style interface (Season 4 only) |
-| **🆕 Sprite Dust Calculator** | Plan your resummons with cost calculation and missing dust tracking |
-| **🆕 Mastery Pod** | Visualize all your mastered sprites in a special back bling view |
+| **🔄 Season 4 (Override)** | Full support for Season 4 Sprites and variants |
+| **🌱 Sprite Garden** | A beautiful, interactive garden showcasing all your collected Sprites |
+| **📋 Lobby Codes S4** | View and copy special codes to unlock exclusive rewards |
+| **🗺️ Interactive Map** | Draw lines, place markers (Chests, Vaults, Cheat Codes, etc.) – all anchored to the map even when zooming or panning |
+| **🕹️ Retro Mode** | Activate a pixel-art style interface (Season 4 only) |
+| **🧮 Sprite Dust Calculator** | Plan your resummons with cost calculation and missing sprite dust tracking |
+| **🎒 Mastery Pod** | Visualize all your mastered sprites in a special back bling view |
+| **⚡ Override List** | Browse all Season 4 Override abilities with descriptions and icons (press `O`) |
+| **⚙️ Settings & Sprite Companion** | Adjust volume, choose a floating sprite companion that bounces around your screen, and toggle it on/off |
 
 ---
 
@@ -128,12 +130,14 @@ Track every Sprite, unlock every variant, monitor your progress and share your c
 | `I` | Open Statistics |
 | `E` | Open the Export menu |
 | `J` | Open the Sprite Garden |
-| `K` | Open map |
+| `K` | Open the Interactive Map |
 | `P` | Open Mastery Pod |
 | `C` | Open Sprite Dust Calculator |
+| `O` | Open the Override List (Season 4 abilities) |
+| `?` | Open the Keyboard Shortcuts menu |
+| `↑ ↑ ↓ ↓ ← → ← → b a` | Quickly switch seasons (Konami Code) |
+| `Ctrl + Alt + R` | Toggle Retro Mode (Season 4 only) |
 | `Esc` | Close any modal or blur the input field |
-| `↑ ↑ ↓ ↓ ← → ← → b a` | Quickly switch seasons |
-| `?` | Show this shortcuts menu |
 
 All shortcuts are available from anywhere in the app (except when typing in input fields).
 
