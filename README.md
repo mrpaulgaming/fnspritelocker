@@ -48,6 +48,7 @@ Track every Sprite, unlock every variant, monitor your progress and share your c
 
 ## 🌐 Live Demos
 
+[![fabiojava.it](https://img.shields.io/badge/fabiojava.it-6A0DAD?style=for-the-badge&logo=googlechrome&logoColor=white)](https://fnspritelocker.fabiojava.it/)
 [![Vercel](https://img.shields.io/badge/Vercel-000000?style=for-the-badge&logo=vercel&logoColor=white)](https://fnspritelocker.vercel.app/)
 [![GitHub Pages](https://img.shields.io/badge/GitHub%20Pages-222222?style=for-the-badge&logo=githubpages&logoColor=white)](https://mrpaulgaming.github.io/fnspritelocker/)
 > 💡 **Tip:** They works exactly the same, use the one that works best on your device!
