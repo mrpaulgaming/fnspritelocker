@@ -40,7 +40,7 @@
 
 Track every Sprite, unlock every variant, monitor your progress and share your collection — all offline.
 
-**Created by Paolo**
+**Created by Paul**
 
 **👉 [Try it now!](https://fnspritelocker.fabiojava.it/)**
 
@@ -95,17 +95,20 @@ Track every Sprite, unlock every variant, monitor your progress and share your c
 
 | Feature | Description |
 |---------|-------------|
-| 🗂️ Collection Management | Track every Sprite and variant |
-| ⭐ Mastery System | Mark completed Sprites and their variations with a crown |
-| 📊 Statistics | Real-time completion tracking |
-| 🔲 Locker & Grid View | Two different viewing modes |
-| 🔍 Filters & Search | Find any Sprite instantly |
-| 📋 Sort & Group | Sort by name, rarity, completion or last updated |
-| 📤 PNG Export | Export beautiful collection images |
-| 💾 JSON Backup | Import and export your progress |
-| 🔗 Share Collection | Share your collection with one URL |
-| 🎵 Background Music | Optional Fortnite lobby music |
-| 📱 Responsive Design | Desktop, tablet and mobile support |
+| **🗂️ Collection Management** | Track every Sprite and variant |
+| **⭐ Mastery System** | Mark completed Sprites and their variations with a crown |
+| **📊 Statistics** | Real-time completion tracking |
+| **🔲 Locker & Grid View** | Two different viewing modes |
+| **🔍 Filters & Search** | Find any Sprite instantly |
+| **📋 Sort & Group** | Sort by name, rarity, completion or last updated |
+| **📤 PNG Export** | Export beautiful collection images |
+| **💾 JSON Backup** | Import and export your progress |
+| **🔗 Share Collection** | Share your collection with one URL |
+| **🎵 Background Music** | Optional Fortnite lobby music |
+| **📱 Responsive Design** | Desktop, tablet and mobile support |
+| **🌐 Multi-language** | Full support for Italian, English, Spanish and French |
+| **🎉 Completion Effects (SFX)** | Confetti, sprite rain and dance video when you complete the collection |
+| **🎥 Animated Sprites** | Some basic sprites feature animated videos when SFX is enabled |
 | **🔄 Season 4 (Override)** | Full support for Season 4 Sprites and variants |
 | **🌱 Sprite Garden** | A beautiful, interactive garden showcasing all your collected Sprites |
 | **📋 Lobby Codes S4** | View and copy special codes to unlock exclusive rewards |
@@ -135,6 +138,7 @@ Track every Sprite, unlock every variant, monitor your progress and share your c
 | `P` | Open Mastery Pod |
 | `C` | Open Sprite Dust Calculator |
 | `O` | Open the Override List (Season 4 abilities) |
+| `L` | Open Lobby Codes |
 | `?` | Open the Keyboard Shortcuts menu |
 | `↑ ↑ ↓ ↓ ← → ← → b a` | Quickly switch seasons (Konami Code) |
 | `Ctrl + Alt + R` | Toggle Retro Mode (Season 4 only) |
@@ -149,7 +153,7 @@ All shortcuts are available from anywhere in the app (except when typing in inpu
 ## Clone the repository
 
 ```bash
-git clone https://github.com/yourusername/fortnite-sprite-locker.git
+git clone https://github.com/mrpaulgaming/fnspritelocker.git
 ```
 
 or simply download the ZIP archive.
@@ -282,7 +286,7 @@ Final implementation and project design were manually developed and reviewed.
 |---------|--------|
 | Light Theme | 📋 Planned |
 | PDF Export | 📋 Planned |
-| Achievement System | 📋 Planned |
+| Achievement System | ✅ (Partly) Done |
 | Cloud Backup | 📋 Planned |
 | Multi-season Support | ✅ Done |
 | Mobile App | ✅ (Partly) Done |
@@ -304,7 +308,7 @@ Contributions are welcome!
 
 # 📧 Contact
 
-**Developer:** Paolo
+**Developer:** Paul
 
 - 📺 YouTube: **[@MrPaulGaming](https://www.youtube.com/@MrPaulGaming)**
 - 🐙 GitHub: **[mrpaulgaming/fnspritelocker](https://github.com/mrpaulgaming/fnspritelocker)**
@@ -327,6 +331,6 @@ If you enjoy this project:
 
 **Built with ❤️ using HTML, CSS and JavaScript**
 
-© 2026 Paolo
+© 2026 Paul
 
 </div>
