@@ -132,6 +132,7 @@ Track every Sprite, unlock every variant, monitor your progress and share your c
 | `G` | Toggle Grid / Locker view |
 | `S` | Focus the search bar |
 | `I` | Open Statistics |
+| `A` | Open Achievements |
 | `E` | Open the Export menu |
 | `J` | Open the Sprite Garden |
 | `K` | Open the Interactive Map |
@@ -286,7 +287,7 @@ Final implementation and project design were manually developed and reviewed.
 |---------|--------|
 | Light Theme | 📋 Planned |
 | PDF Export | 📋 Planned |
-| Achievement System | ✅ (Partly) Done |
+| Achievement System | ✅ Done |
 | Cloud Backup | 📋 Planned |
 | Multi-season Support | ✅ Done |
 | Mobile App | ✅ (Partly) Done |
