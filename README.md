@@ -240,10 +240,12 @@ fortnite-sprite-locker/
 ├── qr-code.png                # Static QR code image for the modal
 │
 ├── assets/                    # All media resources
-│   ├── sprites/               # Sprite images (PNG, named by ID)
-│   ├── icons/                 # Icons (logo, GitHub, etc.)
-│   ├── ui/                    # UI elements (background, mastered crown, dust)
-│   └── audios/                # Background music (lobby-music.mp3)
+│   ├── sprites/               # Sprite images (PNG, named by ID, e.g. water_basic.png)
+│   ├── backgrounds/           # Background images for variants (e.g. gold-bg.png, galaxy-bg.png)
+│   ├── icons/                 # Icons (logo, GitHub, chests, vaults, cheat codes, map markers, etc.)
+│   ├── ui/                    # UI elements (backgrounds, mastered crown, sprite dust, maps, pod images, etc.)
+│   ├── audios/                # Audio files (lobby-music.mp3, click.mp3, extraction.mp3)
+│   └── videos/                # Video files (intro.mp4, dancing.webm, sprite animations, trailers, etc.)
 │
 ├── docs/                      # Detailed documentation (Markdown)
 │   ├── FEATURES.md
@@ -262,8 +264,8 @@ fortnite-sprite-locker/
     ├── export-menu.png
     ├── share-menu.png
     ├── filters.png
-    └── stats.png
-	└── buttons.png
+    ├── stats.png
+    └── buttons.png
 ```
 
 ---
