@@ -23,7 +23,7 @@
 
 # 🎮 Fortnite Sprite Locker
 
-![Version](https://img.shields.io/badge/version-6.4-blue?style=for-the-badge)
+![Version](https://img.shields.io/badge/version-7.5-blue?style=for-the-badge)
 ![HTML5](https://img.shields.io/badge/HTML5-E34F26?style=for-the-badge&logo=html5&logoColor=white)
 ![CSS3](https://img.shields.io/badge/CSS3-1572B6?style=for-the-badge&logo=css3&logoColor=white)
 ![JavaScript](https://img.shields.io/badge/JavaScript-F7DF1E?style=for-the-badge&logo=javascript&logoColor=black)
@@ -106,6 +106,7 @@ Track every Sprite, unlock every variant, monitor your progress and share your c
 | **🔗 Share Collection** | Share your collection with one URL |
 | **🎵 Background Music** | Optional Fortnite lobby music |
 | **📱 Responsive Design** | Desktop, tablet and mobile support |
+| **📱 Touch Gestures** | Swipe to navigate sprites/variants, long-press for details, double-tap to toggle |
 | **🌐 Multi-language** | Full support for Italian, English, Spanish and French |
 | **🎉 Completion Effects (SFX)** | Confetti, sprite rain and dance video when you complete the collection |
 | **🎥 Animated Sprites** | Some basic sprites feature animated videos when SFX is enabled |
@@ -121,11 +122,12 @@ Track every Sprite, unlock every variant, monitor your progress and share your c
 
 ---
 
-## ⌨️ Shortcuts (available on both PC and mobile, only PC ones here below)
+## ⌨️ Keyboard Shortcuts
 
 | Shortcut | Action |
 |----------|--------|
 | `←` / `→` | Navigate between sprites |
+| `↑` / `↓` | Navigate between variants of the current sprite |
 | `Space` | Toggle the selected variant (acquire/remove) |
 | `M` | Play / Pause music |
 | `Shift + M` | Toggle “Mastered” for the current sprite |
@@ -146,6 +148,20 @@ Track every Sprite, unlock every variant, monitor your progress and share your c
 | `Esc` | Close any modal or blur the input field |
 
 All shortcuts are available from anywhere in the app (except when typing in input fields).
+
+---
+
+## 📱 Touch Gestures
+
+| Gesture | Action |
+|---------|--------|
+| Swipe `←` / `→` on sprite | Navigate between sprites |
+| Swipe `↑` / `↓` on sprite | Navigate between variants |
+| Double-tap on sprite | Toggle the selected variant |
+| Long-press on a variant button | Show variant details (cost, bonus, spawn rate) |
+| Double-tap Chapter 7 - Season ... header | Focus search |
+| Double-tap on logo | Open Sprite Garden |
+| Tap season in footer | Toggle Retro Mode (S4 only) |
 
 ---
 
