@@ -23,7 +23,7 @@
 
 # 🎮 Fortnite Sprite Locker
 
-![Version](https://img.shields.io/badge/version-7.5-blue?style=for-the-badge)
+![Version](https://img.shields.io/badge/version-9.3-blue?style=for-the-badge)
 ![HTML5](https://img.shields.io/badge/HTML5-E34F26?style=for-the-badge&logo=html5&logoColor=white)
 ![CSS3](https://img.shields.io/badge/CSS3-1572B6?style=for-the-badge&logo=css3&logoColor=white)
 ![JavaScript](https://img.shields.io/badge/JavaScript-F7DF1E?style=for-the-badge&logo=javascript&logoColor=black)
@@ -129,20 +129,21 @@ Track every Sprite, unlock every variant, monitor your progress and share your c
 | `←` / `→` | Navigate between sprites |
 | `↑` / `↓` | Navigate between variants of the current sprite |
 | `Space` | Toggle the selected variant (acquire/remove) |
-| `M` | Play / Pause music |
-| `Shift + M` | Toggle “Mastered” for the current sprite |
-| `G` | Toggle Grid / Locker view |
+| `U` | Play / Pause music (SFX) |
+| `Shift + M` | Toggle "Mastered" for the current sprite |
+| `L` | Toggle Grid / Locker view (Layout) |
 | `S` | Focus the search bar |
 | `I` | Open Statistics |
 | `A` | Open Achievements |
 | `E` | Open the Export menu |
-| `J` | Open the Sprite Garden |
-| `K` | Open the Interactive Map |
+| `G` | Open the Sprite Garden |
+| `M` | Open the Interactive Map |
 | `P` | Open Mastery Pod |
 | `C` | Open Sprite Dust Calculator |
 | `O` | Open the Override List (Season 4 abilities) |
-| `L` | Open Lobby Codes |
+| `B` | Open Lobby Codes (S4) |
 | `?` | Open the Keyboard Shortcuts menu |
+| `V` (×3) | Video easter egg |
 | `↑ ↑ ↓ ↓ ← → ← → b a` | Quickly switch seasons (Konami Code) |
 | `Ctrl + Alt + R` | Toggle Retro Mode (Season 4 only) |
 | `Esc` | Close any modal or blur the input field |
