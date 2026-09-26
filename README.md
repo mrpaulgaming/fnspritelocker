@@ -97,28 +97,33 @@ Track every Sprite, unlock every variant, monitor your progress and share your c
 |---------|-------------|
 | **🗂️ Collection Management** | Track every Sprite and variant |
 | **⭐ Mastery System** | Mark completed Sprites and their variations with a crown |
+| **🏆 Achievements** | 15+ unlockable achievements with animated popup notifications |
 | **📊 Statistics** | Real-time completion tracking |
 | **🔲 Locker & Grid View** | Two different viewing modes |
 | **🔍 Filters & Search** | Find any Sprite instantly |
 | **📋 Sort & Group** | Sort by name, rarity, completion or last updated |
-| **📤 PNG Export** | Export beautiful collection images |
-| **💾 JSON Backup** | Import and export your progress |
-| **🔗 Share Collection** | Share your collection with one URL |
-| **🎵 Background Music** | Optional Fortnite lobby music |
-| **📱 Responsive Design** | Desktop, tablet and mobile support |
+| **⌨️ Keyboard Shortcuts** | Full hotkey support (`?` to open the cheat-sheet modal) |
 | **📱 Touch Gestures** | Swipe to navigate sprites/variants, long-press for details, double-tap to toggle |
-| **🌐 Multi-language** | Full support for Italian, English, Spanish and French |
-| **🎉 Completion Effects (SFX)** | Confetti, sprite rain and dance video when you complete the collection |
+| **🎨 Sprite Backgrounds** | Toggle decorative PNG/gradient backgrounds behind variants in Locker view |
+| **📤 PNG Export** | Export beautiful collection images as a poster or a checklist |
+| **💾 JSON Backup** | Import and export your progress |
+| **🔗 Share Collection** | Share your collection to your friends with a URL |
+| **📱 QR Code Sharing** | QR code to open the app on another device |
+| **👤 User Profile** | Custom username, avatar sprite and accent color — included in shared links |
+| **🎵 Background Music** | Optional Fortnite lobby music |
 | **🎥 Animated Sprites** | Some basic sprites feature animated videos when SFX is enabled |
+| **🎉 Completion Effects (SFX)** | Confetti, sprite rain and dance video when you complete the collection |
 | **🔄 Season 4 (Override)** | Full support for Season 4 Sprites and variants |
 | **🌱 Sprite Garden** | A beautiful, interactive garden showcasing all your collected Sprites |
+| **🗺️ Interactive Map** | Draw lines, place markers (Chests, Ammo, Healing, Fishing, Vehicles, Special) – filter by category, all anchored to the map when zooming/panning |
 | **📋 Lobby Codes S4** | View and copy special codes to unlock exclusive rewards |
-| **🗺️ Interactive Map** | Draw lines, place markers (Chests, Vaults, Cheat Codes, etc.) – all anchored to the map even when zooming or panning |
-| **🕹️ Retro Mode** | Activate a pixel-art style interface (Season 4 only) |
-| **🧮 Sprite Dust Calculator** | Plan your resummons with cost calculation and missing sprite dust tracking |
-| **🎒 Mastery Pod** | Visualize all your mastered sprites in a special back bling view |
 | **⚡ Override List** | Browse all Season 4 Override abilities with descriptions and icons (press `O`) |
+| **🎒 Mastery Pod** | Visualize all your mastered sprites in a special back bling view |
+| **🧮 Sprite Dust Calculator** | Plan your resummons with cost calculation and missing sprite dust tracking |
+| **🕹️ Retro Mode** | Activate a pixel-art style interface (Season 4 only) |
 | **⚙️ Settings & Sprite Companion** | Adjust volume, choose a floating sprite companion that bounces around your screen, and toggle it on/off |
+| **🌐 Multi-language** | Full support for Italian, English, Spanish and French |
+| **📱 Responsive Design** | Desktop, tablet and mobile support |
 
 ---
 
