@@ -108,7 +108,8 @@ Track every Sprite, unlock every variant, monitor your progress and share your c
 | **📤 PNG Export** | Export beautiful collection images as a poster or a checklist |
 | **💾 JSON Backup** | Import and export your progress |
 | **🔗 Share Collection** | Share your collection to your friends with a URL |
-| **📱 QR Code Sharing** | QR code to open the app on another device |
+| **📥 Import from Link** | Paste a shared link to import a collection, works cross-domain |
+| **📱 QR Code ** | QR code to open the app on another device |
 | **👤 User Profile** | Custom username, avatar sprite and accent color — included in shared links |
 | **🎵 Background Music** | Optional Fortnite lobby music |
 | **🎥 Animated Sprites** | Some basic sprites feature animated videos when SFX is enabled |
@@ -259,7 +260,10 @@ fortnite-sprite-locker/
 │
 ├── index.html                 # Main application (all-in-one)
 ├── README.md                  # This file
-├── qr-code.png                # Static QR code image for the modal
+├── manifest.json              # PWA manifest
+├── service-worker.js          # PWA service worker (offline-ready)
+├── qr-code-fabiojava.png      # QR code for the fabiojava.it domain
+├── qr-code-vercel.png         # QR code for the vercel.app domain
 │
 ├── assets/                    # All media resources
 │   ├── sprites/               # Sprite images (PNG, named by ID, e.g. water_basic.png)
@@ -313,6 +317,7 @@ Final implementation and project design were manually developed and reviewed.
 | PDF Export | 📋 Planned |
 | Achievement System | ✅ Done |
 | Cloud Backup | 📋 Planned |
+| Cross-domain Share Import | ✅ Done |
 | Multi-season Support | ✅ Done |
 | Mobile App | ✅ (Partly) Done |
 
