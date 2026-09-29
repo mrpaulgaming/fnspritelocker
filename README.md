@@ -109,7 +109,7 @@ Track every Sprite, unlock every variant, monitor your progress and share your c
 | **💾 JSON Backup** | Import and export your progress |
 | **🔗 Share Collection** | Share your collection to your friends with a URL |
 | **📥 Import from Link** | Paste a shared link to import a collection, works cross-domain |
-| **📱 QR Code ** | QR code to open the app on another device |
+| **📱 QR Code** | QR code to open the app on another device |
 | **👤 User Profile** | Custom username, avatar sprite and accent color — included in shared links |
 | **🎵 Background Music** | Optional Fortnite lobby music |
 | **🎥 Animated Sprites** | Some basic sprites feature animated videos when SFX is enabled |
