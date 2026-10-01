@@ -336,6 +336,66 @@ Contributions are welcome!
 
 ---
 
+# ⚖️ Legal Disclaimer
+
+## Unofficial Fan Project
+
+**Fortnite Sprite Locker** is an **unofficial, non-commercial fan project** created by a member of the community for personal and educational purposes.
+
+This project is **not affiliated with, endorsed by, sponsored by, or approved by Epic Games, Inc.** in any way.
+
+## Trademarks & Copyright
+
+**Fortnite**, **Fortnite: Battle Royale**, **Chapter 7**, all Sprite names, character designs, icons, artwork, images, sounds, music, videos, and any other related assets are the exclusive property of **Epic Games, Inc.** and their respective owners.
+
+All game-related assets used in this project (images, sounds, videos) are included solely for **informational and illustrative purposes** to help players track their collection. They remain the intellectual property of their rightful owners.
+
+The **source code** of this project is released under the [MIT License](https://opensource.org/licenses/MIT).
+
+## No Monetization
+
+This project is **100% free** and does **not generate any revenue**. There are:
+
+- ❌ No advertisements
+- ❌ No paid features
+- ❌ No in-app purchases
+- ❌ No donations or sponsorships that trade on Epic Games' IP
+- ❌ No commercial use of any kind
+
+## Privacy & Data
+
+This application runs **entirely in your browser**. All your data (collection progress, profile, settings) is stored **locally on your device** using the browser's LocalStorage.
+
+- 🔒 No personal data is collected
+- 🔒 No data is sent to any server
+- 🔒 No analytics or tracking tools are used
+- 🔒 No cookies are set
+
+The only data that ever leaves your device is what **you explicitly share** through the "Copy share link" feature, which encodes your collection into the URL itself.
+
+## DMCA / Takedown Requests
+
+If you are a **rights holder** and believe that any content in this project infringes your copyright, please contact me **directly** before taking legal action:
+
+- 📧 Open an issue on [GitHub Issues](https://github.com/mrpaulgaming/fnspritelocker/issues)
+
+I will respond promptly and remove or modify any content that is reasonably requested.
+
+## Fair Use
+
+Any use of copyrighted material in this project is intended to fall under **fair use** for the purposes of:
+
+- Personal collection tracking
+- Educational value
+- Fan community engagement
+- Non-commercial transformative use
+
+## No Warranty
+
+This project is provided "as is", without warranty of any kind, express or implied. The author is not liable for any damages arising from the use of this software.
+
+---
+
 # 📧 Contact
 
 **Developer:** Paul
