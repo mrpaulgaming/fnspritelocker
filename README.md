@@ -147,9 +147,8 @@ Track every Sprite, unlock every variant, monitor your progress and share your c
 | `P` | Open Mastery Pod |
 | `C` | Open Sprite Dust Calculator |
 | `O` | Open the Override List (Season 4 abilities) |
-| `B` | Open Lobby Codes (S4) |
+| `Y` | Open Lobby Codes (S4) |
 | `?` | Open the Keyboard Shortcuts menu |
-| `V` (×3) | Video easter egg |
 | `↑ ↑ ↓ ↓ ← → ← → b a` | Quickly switch seasons (Konami Code) |
 | `Ctrl + Alt + R` | Toggle Retro Mode (Season 4 only) |
 | `Esc` | Close any modal or blur the input field |
