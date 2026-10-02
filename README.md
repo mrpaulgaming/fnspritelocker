@@ -263,6 +263,8 @@ fortnite-sprite-locker/
 ├── service-worker.js          # PWA service worker (offline-ready)
 ├── qr-code-fabiojava.png      # QR code for the fabiojava.it domain
 ├── qr-code-vercel.png         # QR code for the vercel.app domain
+├── robots.txt                 # (Ignore)
+├── sitemap.xml                # (Ignore)
 │
 ├── assets/                    # All media resources
 │   ├── sprites/               # Sprite images (PNG, named by ID, e.g. water_basic.png)
