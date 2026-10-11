@@ -121,6 +121,7 @@ Track every Sprite, unlock every variant, monitor your progress and share your c
 | **⚡ Override List** | Browse all Season 4 Override abilities with descriptions and icons (press `O`) |
 | **🎒 Mastery Pod** | Visualize all your mastered sprites in a special back bling view |
 | **🧮 Sprite Dust Calculator** | Plan your resummons with cost calculation and missing sprite dust tracking |
+| **🎨 Sprite Studio** | Create beautiful custom posters of your collection. Download as PNG or copy to clipboard |
 | **🕹️ Retro Mode** | Activate a pixel-art style interface (Season 4 only) |
 | **⚙️ Settings & Sprite Companion** | Adjust volume, choose a floating sprite companion that bounces around your screen, and toggle it on/off |
 | **🌐 Multi-language** | Full support for Italian, English, Spanish and French |
@@ -139,6 +140,7 @@ Track every Sprite, unlock every variant, monitor your progress and share your c
 | `Shift + M` | Toggle "Mastered" for the current sprite |
 | `L` | Toggle Grid / Locker view (Layout) |
 | `S` | Focus the search bar |
+| `Shift + S` | Open Sprite Studio |
 | `I` | Open Statistics |
 | `A` | Open Achievements |
 | `E` | Open the Export menu |
@@ -321,6 +323,8 @@ Final implementation and project design were manually developed and reviewed.
 | Cross-domain Share Import | ✅ Done |
 | Multi-season Support | ✅ Done |
 | Mobile App | ✅ (Partly) Done |
+| Sprite Studio | ✅ Done |
+| Checklist Export | ✅ Done |
 
 See **ROADMAP.md** for the complete roadmap.
 
