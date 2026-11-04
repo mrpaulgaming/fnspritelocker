@@ -23,7 +23,7 @@
 
 # 🎮 Fortnite Sprite Locker
 
-![Version](https://img.shields.io/badge/version-10.5-blue?style=for-the-badge)
+![Version](https://img.shields.io/badge/version-26.3-blue?style=for-the-badge)
 ![HTML5](https://img.shields.io/badge/HTML5-E34F26?style=for-the-badge&logo=html5&logoColor=white)
 ![CSS3](https://img.shields.io/badge/CSS3-1572B6?style=for-the-badge&logo=css3&logoColor=white)
 ![JavaScript](https://img.shields.io/badge/JavaScript-F7DF1E?style=for-the-badge&logo=javascript&logoColor=black)
@@ -93,54 +93,112 @@ Track every Sprite, unlock every variant, monitor your progress and share your c
 
 # ✨ Features
 
+### 🗂️ Collection & Tracking
 | Feature | Description |
 |---------|-------------|
-| **🗂️ Collection Management** | Track every Sprite and variant |
-| **⭐ Mastery System** | Mark completed Sprites and their variations with a crown |
-| **🏆 Achievements** | 15+ unlockable achievements with animated popup notifications |
-| **📊 Statistics** | Real-time completion tracking |
-| **🔲 Locker & Grid View** | Two different viewing modes |
-| **🔍 Filters & Search** | Find any Sprite instantly |
-| **📋 Sort & Group** | Sort by name, rarity, completion or last updated |
-| **⌨️ Keyboard Shortcuts** | Full hotkey support (`?` to open the cheat-sheet modal) |
-| **📱 Touch Gestures** | Swipe to navigate sprites/variants, long-press for details, double-tap to toggle |
-| **🎨 Sprite Backgrounds** | Toggle decorative PNG/gradient backgrounds behind variants in Locker view |
-| **📤 PNG Export** | Export beautiful collection images as a poster or a checklist |
-| **💾 JSON Backup** | Import and export your progress |
-| **🔗 Share Collection** | Share your collection to your friends with a URL |
-| **📥 Import from Link** | Paste a shared link to import a collection, works cross-domain |
-| **📱 QR Code** | QR code to open the app on another device |
-| **👤 User Profile** | Custom username, avatar sprite and accent color — included in shared links |
-| **🎵 Background Music** | Optional Fortnite lobby music |
-| **🎥 Animated Sprites** | Some basic sprites feature animated videos when SFX is enabled |
-| **🎉 Completion Effects (SFX)** | Confetti, sprite rain and dance video when you complete the collection |
-| **🔄 Season 4 (Override)** | Full support for Season 4 Sprites and variants |
-| **🌱 Sprite Garden** | A beautiful, interactive garden showcasing all your collected Sprites |
-| **🗺️ Interactive Map** | Draw lines, place markers (Chests, Ammo, Healing, Fishing, Vehicles, Special) – filter by category, all anchored to the map when zooming/panning |
-| **📋 Lobby Codes S4** | View and copy special codes to unlock exclusive rewards |
-| **⚡ Override List** | Browse all Season 4 Override abilities with descriptions and icons (press `O`) |
-| **🎒 Mastery Pod** | Visualize all your mastered sprites in a special back bling view |
-| **🧮 Sprite Dust Calculator** | Plan your resummons with cost calculation and missing sprite dust tracking |
-| **🎨 Sprite Studio** | Create beautiful custom posters of your collection. Download as PNG or copy to clipboard |
-| **🕹️ Retro Mode** | Activate a pixel-art style interface (Season 4 only) |
-| **⚙️ Settings & Sprite Companion** | Adjust volume, choose a floating sprite companion that bounces around your screen, and toggle it on/off |
-| **🌐 Multi-language** | Full support for Italian, English, Spanish and French |
-| **📱 Responsive Design** | Desktop, tablet and mobile support |
+| **Collection Management** | Track every Sprite and variant |
+| **Mastery System** | Mark completed Sprites and their variations with a crown |
+| **Variant Level System** | Every variant has its own Level 1→5 progression that feeds into mastery |
+| **Statistics** | Real-time completion tracking |
+| **Sprite Backgrounds** | Toggle decorative PNG/gradient backgrounds behind variants in Locker view |
+
+### 🖼️ Views & Navigation
+| Feature | Description |
+|---------|-------------|
+| **Locker & Grid View** | Two different viewing modes |
+| **Filters & Search** | Find any Sprite instantly |
+| **Sort & Group** | Sort by name, rarity, completion or last updated |
+| **Keyboard Shortcuts** | Full hotkey support (`?` to open the cheat-sheet modal) |
+| **Touch Gestures** | Swipe to navigate sprites/variants, long-press for details, double-tap to toggle |
+
+### 📅 Seasons Supported
+| Feature | Description |
+|---------|-------------|
+| **Chapter 6 Legacy (S1 & S3)** | Legacy sprites with no variants/mastery, still trackable and included in shared collections |
+| **Chapter 7 Season 4 (Override)** | Full support for Season 4 Sprites and variants |
+| **Chapter 7 Season 5 (Treasure Hunters)** | Full support for C7S5, including **Fortune** and **Cursed** variant categories |
+
+### 🏆 Mastery & Achievements
+| Feature | Description |
+|---------|-------------|
+| **Achievements** | **23** unlockable achievements with animated popup notifications |
+| **Random to Master** | Weighted random pick of a sprite that's ready (or almost ready) to be mastered |
+| **Mastery Pod** | Visualize all your mastered sprites in a special back bling view |
+
+### 📤 Share & Data
+| Feature | Description |
+|---------|-------------|
+| **PNG Export** | Export collection images as a poster or a checklist |
+| **JSON Backup** | Import and export your progress |
+| **Share Collection** | Share your collection with a URL (compressed via LZ-String) |
+| **Import from Link** | Paste a shared link to import a collection, works cross-domain |
+| **Import Diff Comparison** | Visual before/after diff when importing — choose **Merge** or **Replace**, filter by season / rarity / variant |
+| **QR Code** | Open the app on another device via QR code |
+
+### 🎨 Tools & Studio
+| Feature | Description |
+|---------|-------------|
+| **Sprite Studio** | Create custom posters of your collection — download PNG or copy to clipboard |
+| **Sprite Dust Calculator** | Plan resummons with cost calculation and missing sprite dust tracking |
+| **Interactive Map** | Draw lines and place markers (Chests, Ammo, Healing, Fishing, Vehicles, Special) — filter by category |
+| **Sprite Garden** | Interactive garden showcasing all your collected Sprites |
+
+### 🌟 Season-Exclusive Content
+| Feature | Description |
+|---------|-------------|
+| **Lobby Codes (S4)** | Copy special codes to unlock exclusive S4 rewards |
+| **Override List (S4)** | Browse all Season 4 abilities with descriptions and icons |
+| **Retro Mode (S4)** | Pixel-art style interface |
+| **Treasure Checklist (S5)** | Interactive drawing canvas over the treasures map |
+| **Golden Mode (S5)** | Full-gold cinematic skin for the interface |
+
+### 🎮 Mini-Games & Effects
+| Feature | Description |
+|---------|-------------|
+| **Sprite-Man Mini-Game** | Arcade game with 5 levels, power-ups, level selector, character carousel and per-season leaderboard |
+| **Season Completion Overlays** | Full-screen cinematic overlays when you complete a season (S3 / S4 / S5) |
+| **Completion Effects** | Confetti, sprite rain and dance video when you complete the collection |
+| **Animated Sprites** | Some basic sprites feature looping animated videos when SFX is enabled |
+| **Background Music** | Optional Fortnite lobby music |
+
+### 👤 Profile & Settings
+| Feature | Description |
+|---------|-------------|
+| **User Profile** | Custom username, avatar sprite, custom avatar upload and accent color — included in shared links |
+| **Settings & Sprite Companion** | Adjust volume and choose a floating sprite companion that bounces around your screen |
+
+### 🌐 Technical
+| Feature | Description |
+|---------|-------------|
+| **Multi-language** | Italian, English, Spanish and French |
+| **Responsive Design** | Desktop, tablet and mobile support |
+| **Offline-Ready** | Runs 100% in your browser via PWA + LocalStorage |
 
 ---
 
 ## ⌨️ Keyboard Shortcuts
 
+### 🧭 Navigation & Selection
 | Shortcut | Action |
 |----------|--------|
 | `←` / `→` | Navigate between sprites |
 | `↑` / `↓` | Navigate between variants of the current sprite |
-| `Space` | Toggle the selected variant (acquire/remove) |
-| `U` | Play / Pause music (SFX) |
+| `Space` | Toggle the selected variant (acquire / remove) |
 | `Shift + M` | Toggle "Mastered" for the current sprite |
+| `R` | Random to Master (weighted pick) |
+
+### 🎛️ Interface
+| Shortcut | Action |
+|----------|--------|
 | `L` | Toggle Grid / Locker view (Layout) |
 | `S` | Focus the search bar |
-| `Shift + S` | Open Sprite Studio |
+| `U` | Play / Pause music (SFX) |
+| `Esc` | Close any modal or blur the input field |
+| `?` | Open this Keyboard Shortcuts menu |
+
+### 📋 Panels & Tools
+| Shortcut | Action |
+|----------|--------|
 | `I` | Open Statistics |
 | `A` | Open Achievements |
 | `E` | Open the Export menu |
@@ -148,12 +206,18 @@ Track every Sprite, unlock every variant, monitor your progress and share your c
 | `M` | Open the Interactive Map |
 | `P` | Open Mastery Pod |
 | `C` | Open Sprite Dust Calculator |
-| `O` | Open the Override List (Season 4 abilities) |
+| `Shift + S` | Open Sprite Studio |
+| `O` | Open the Override List (S4) |
 | `Y` | Open Lobby Codes (S4) |
-| `?` | Open the Keyboard Shortcuts menu |
-| `↑ ↑ ↓ ↓ ← → ← → b a` | Quickly switch seasons (Konami Code) |
-| `Ctrl + Alt + R` | Toggle Retro Mode (Season 4 only) |
-| `Esc` | Close any modal or blur the input field |
+| `T` | Toggle Treasure Checklist (**S5 only**) |
+
+### 🥚 Secrets & Easter Eggs
+| Shortcut | Action |
+|----------|--------|
+| `↑ ↑ ↓ ↓ ← → ← → b a` | Konami Code — quickly switch seasons |
+| `Ctrl + Alt + R` | Toggle Retro Mode (**S4 only**) |
+| `Ctrl + Alt + G` | Toggle Golden Mode (**S5 only**) |
+| `H` | Open Sprite-Man (when unlocked) |
 
 All shortcuts are available from anywhere in the app (except when typing in input fields).
 
@@ -169,7 +233,7 @@ All shortcuts are available from anywhere in the app (except when typing in inpu
 | Long-press on a variant button | Show variant details (cost, bonus, spawn rate) |
 | Double-tap Chapter 7 - Season ... header | Focus search |
 | Double-tap on logo | Open Sprite Garden |
-| Tap season in footer | Toggle Retro Mode (S4 only) |
+| Tap season in footer | Toggle **Retro Mode** (S4) / **Golden Mode** (S5) |
 
 ---
 
