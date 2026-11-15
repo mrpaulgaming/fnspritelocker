@@ -9230,6 +9230,37 @@ body.gold-mode .toast {
     background: rgba(0,0,0,0.2);
 }
 
+/* --- Placeholder in stile Fortnite.gg --- */
+.treasure-placeholder-box {
+    width: 100%;
+    aspect-ratio: 1;
+    border-radius: 8px;
+    margin-bottom: 8px;
+    background-color: #31313d;
+    background-image: repeating-linear-gradient(
+        -45deg,
+        transparent,
+        transparent 12px,
+        rgba(255, 255, 255, 0.03) 12px,
+        rgba(255, 255, 255, 0.03) 24px
+    );
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    overflow: hidden;
+    box-shadow: inset 0 0 15px rgba(0,0,0,0.4);
+}
+
+.treasure-placeholder-question {
+    font-family: var(--font-heading, 'Montserrat', sans-serif);
+    font-size: 56px;
+    font-weight: 900;
+    color: rgba(255, 255, 255, 0.15);
+    text-shadow: 0 4px 12px rgba(0,0,0,0.6);
+    user-select: none;
+}
+
 .treasure-item-name {
     font-size: 13px;
     font-weight: 800;
@@ -15526,9 +15557,9 @@ const SPRITES = [
     season: "7-5",
     passive: "Deploys a Healing Smoke Bomb at low health. Decreased cooldown and increased duration and healing with each Level Up!",
     variants: ["basic","fortune","cursed","gold"],
-    unreleasedVariants: [],
+    unreleasedVariants: ["gold"],
     rarity: "epic",
-    unreleased: true,
+    unreleased: false,
     spawn: { basic: "0%", fortune: "0%", cursed: "0%", gold: "0%" },
     obtain: { basic: "chest", fortune: "chest", cursed: "chest", gold: "chest" },
     levelUp: "📦 Chests | 💀 Eliminations"
@@ -15542,7 +15573,7 @@ const SPRITES = [
     variants: ["basic"],
     unreleasedVariants: [],
     rarity: "mythic",
-    unreleased: true,
+    unreleased: false,
     spawn: { basic: "0%" },
     obtain: { basic: "chest" },
     levelUp: "📦 Chests | 💀 Eliminations"
@@ -15553,9 +15584,9 @@ const SPRITES = [
     season: "7-5",
     passive: "Grants a Friendship Bubble when emoting with other players. Decreased cooldown with each Level Up!",
     variants: ["basic","fortune","cursed","gold"],
-    unreleasedVariants: [],
+    unreleasedVariants: ["gold"],
     rarity: "mythic",
-    unreleased: true,
+    unreleased: false,
     spawn: { basic: "0%", fortune: "0%", cursed: "0%", gold: "0%" },
     obtain: { basic: "chest", fortune: "chest", cursed: "chest", gold: "chest" },
     levelUp: "📦 Chests | 💀 Eliminations"
@@ -18134,6 +18165,20 @@ treasure_unknown_reward: "Sconosciuto",
 treasure_coming_soon:    "In arrivo",
 treasure_week_ended_toast: "Questa settimana è terminata. Non puoi più modificare i progressi.",
 treasure_in_minutes: "Tra {m}m",
+        treasure_name_gold_chevrolet: "Chevrolet Corvette ZR1 d'Oro",
+        treasure_name_mikus_takarabako: "Takarabako di Miku",
+        treasure_name_pppp: "PPPP",
+        treasure_name_may_fortnite_find_you: "Che Fortnite Ti Trovi",
+        treasure_name_solid_gold_teto: "Kasane Teto d'Oro Massiccio",
+        treasure_name_gold_lamborghini: "Lamborghini Urus SE d'Oro",
+        treasure_name_rogue_wave: "Rogue Wave e Tidewalker",
+        treasure_name_sea_shanty: "Canto Marinaresco",
+        treasure_name_oscars_wraps: "Bende di Oscar",
+        treasure_name_solid_gold_captain_x: "Capitano X d'Oro Massiccio",
+        treasure_name_gold_gwagon: "Classe G d'Oro v2",
+        treasure_name_roasted_meat: "Carne Arrostita",
+        treasure_name_i_follow_rivers: "I Follow Rivers",
+        treasure_name_jones_straw_hats: "Jones e i Cappelli di Paglia",
     },
 
     en: {
@@ -18841,6 +18886,20 @@ treasure_unknown_reward: "Unknown",
 treasure_coming_soon:    "Coming soon",
 treasure_week_ended_toast: "This week has ended. You can no longer modify your progress.",
 treasure_in_minutes: "In {m}m",
+        treasure_name_gold_chevrolet: "Gold Chevrolet Corvette ZR1",
+        treasure_name_mikus_takarabako: "Miku's Takarabako",
+        treasure_name_pppp: "PPPP",
+        treasure_name_may_fortnite_find_you: "May Fortnite Find You",
+        treasure_name_solid_gold_teto: "Solid Gold Kasane Teto",
+        treasure_name_gold_lamborghini: "Gold Lamborghini Urus SE",
+        treasure_name_rogue_wave: "Rogue Wave and Tidewalker",
+        treasure_name_sea_shanty: "Sea Shanty",
+        treasure_name_oscars_wraps: "Oscar's Wraps",
+        treasure_name_solid_gold_captain_x: "Solid Gold Captain X",
+        treasure_name_gold_gwagon: "Gold G-Wagon v2",
+        treasure_name_roasted_meat: "Roasted Meat",
+        treasure_name_i_follow_rivers: "I Follow Rivers",
+        treasure_name_jones_straw_hats: "Jones and the Straw Hats",
 	},
 
     es: {
@@ -19549,6 +19608,20 @@ treasure_unknown_reward: "Desconocido",
 treasure_coming_soon:    "Próximamente",
 treasure_week_ended_toast: "Esta semana ha terminado. Ya no puedes modificar tu progreso.",
 treasure_in_minutes: "En {m}m",
+        treasure_name_gold_chevrolet: "Chevrolet Corvette ZR1 de Oro",
+        treasure_name_mikus_takarabako: "Takarabako de Miku",
+        treasure_name_pppp: "PPPP",
+        treasure_name_may_fortnite_find_you: "Que Fortnite Te Encuentre",
+        treasure_name_solid_gold_teto: "Kasane Teto de Oro Macizo",
+        treasure_name_gold_lamborghini: "Lamborghini Urus SE de Oro",
+        treasure_name_rogue_wave: "Rogue Wave y Tidewalker",
+        treasure_name_sea_shanty: "Canto Marinero",
+        treasure_name_oscars_wraps: "Vendas de Oscar",
+        treasure_name_solid_gold_captain_x: "Capitán X de Oro Macizo",
+        treasure_name_gold_gwagon: "Clase G de Oro v2",
+        treasure_name_roasted_meat: "Carne Asada",
+        treasure_name_i_follow_rivers: "I Follow Rivers",
+        treasure_name_jones_straw_hats: "Jones y los Sombreros de Paja",
 	},
 
     fr: {
@@ -20255,6 +20328,20 @@ treasure_unknown_reward: "Inconnu",
 treasure_coming_soon:    "Bientôt",
 treasure_week_ended_toast: "Cette semaine est terminée. Vous ne pouvez plus modifier votre progression.",
 treasure_in_minutes: "Dans {m}m",
+        treasure_name_gold_chevrolet: "Chevrolet Corvette ZR1 Dorée",
+        treasure_name_mikus_takarabako: "Takarabako de Miku",
+        treasure_name_pppp: "PPPP",
+        treasure_name_may_fortnite_find_you: "Que Fortnite Te Trouve",
+        treasure_name_solid_gold_teto: "Kasane Teto en Or Massif",
+        treasure_name_gold_lamborghini: "Lamborghini Urus SE Dorée",
+        treasure_name_rogue_wave: "Rogue Wave et Tidewalker",
+        treasure_name_sea_shanty: "Chant de Marin",
+        treasure_name_oscars_wraps: "Bandages d'Oscar",
+        treasure_name_solid_gold_captain_x: "Capitaine X en Or Massif",
+        treasure_name_gold_gwagon: "Classe G Dorée v2",
+        treasure_name_roasted_meat: "Viande Rôtie",
+        treasure_name_i_follow_rivers: "I Follow Rivers",
+        treasure_name_jones_straw_hats: "Jones et les Chapeaux de Paille",
 	}
 };
 
@@ -31582,7 +31669,12 @@ const TREASURE_HUNT_DATA = [
         crewImg: 'assets/icons/miku.png',
         items: [
 
-            { id: 'w3_1', nameKey: 'treasure_name_solid_gold_miku', nameFallback: 'Solid Gold Miku', typeKey: 'treasure_type_outfit', typeFallback: 'Outfit', img: 'assets/icons/gold_miku.png', dropRate: '1,562,500' }
+            { id: 'w3_1', nameKey: 'treasure_name_solid_gold_miku', nameFallback: 'Solid Gold Miku', typeKey: 'treasure_type_outfit', typeFallback: 'Outfit', img: 'assets/icons/gold_miku.png', dropRate: '1,562,500' },
+			{ id: 'w3_2', nameKey: 'treasure_name_gold_chevrolet', nameFallback: 'Gold Chevrolet Corvette ZR1', typeKey: 'treasure_type_car', typeFallback: 'Car', img: 'assets/icons/gold_corvette.png', dropRate: '7,813' },
+            { id: 'w3_3', nameKey: 'treasure_name_mikus_takarabako', nameFallback: "Miku's Takarabako", typeKey: 'treasure_type_back_bling', typeFallback: 'Back Bling', img: 'assets/icons/mikus_takarabako.png', dropRate: '568' },
+            { id: 'w3_4', nameKey: 'treasure_name_pppp', nameFallback: 'PPPP', typeKey: 'treasure_type_jam_track', typeFallback: 'Jam Track', img: 'assets/icons/pppp.png', dropRate: '391' },
+            { id: 'w3_5', nameKey: 'treasure_name_may_fortnite_find_you', nameFallback: 'May Fortnite Find You', typeKey: 'treasure_type_loading_screen', typeFallback: 'Loading Screen', img: 'assets/icons/may_fortnite_find_you.png', dropRate: '272' },
+            { id: 'w3_6', nameKey: 'treasure_name_pirate_shop_access', nameFallback: 'Pirate Shop Access', typeKey: 'treasure_type_item_shop_token', typeFallback: 'Item Shop Token ×2', img: 'assets/icons/pirate_token.png', dropRate: '137,500' }
         ]
     },
 
@@ -31594,8 +31686,12 @@ const TREASURE_HUNT_DATA = [
         teaserImage: null,
         crewImg: 'assets/icons/oscar.png', 
         items: [
-
-            { id: 'w4_1', nameKey: 'treasure_name_solid_gold_oscar', nameFallback: 'Solid Gold Oscar', typeKey: 'treasure_type_outfit', typeFallback: 'Outfit', img: 'assets/icons/gold_oscar.png', dropRate: '1,562,500' }
+            { id: 'w4_1', nameKey: 'treasure_name_solid_gold_teto', nameFallback: 'Solid Gold Kasane Teto', typeKey: 'treasure_type_outfit', typeFallback: 'Outfit', img: 'assets/icons/gold_teto.png', dropRate: '1,562,500' },
+            { id: 'w4_2', nameKey: 'treasure_name_gold_lamborghini', nameFallback: 'Gold Lamborghini Urus SE', typeKey: 'treasure_type_car', typeFallback: 'Car', img: 'assets/icons/gold_lamborghini.png', dropRate: '7,813' },
+            { id: 'w4_3', nameKey: 'treasure_name_rogue_wave', nameFallback: 'Rogue Wave and Tidewalker', typeKey: 'treasure_type_back_bling', typeFallback: 'Back Bling', img: 'assets/icons/rogue_wave.png', dropRate: '568' },
+            { id: 'w4_4', nameKey: 'treasure_name_sea_shanty', nameFallback: 'Sea Shanty', typeKey: 'treasure_type_jam_track', typeFallback: 'Jam Track', img: 'assets/icons/sea_shanty.png', dropRate: '391' },
+            { id: 'w4_5', nameKey: 'treasure_name_oscars_wraps', nameFallback: "Oscar's Wraps", typeKey: 'treasure_type_loading_screen', typeFallback: 'Loading Screen', img: 'assets/icons/oscars_wraps.png', dropRate: '272' },
+            { id: 'w4_6', nameKey: 'treasure_name_pirate_shop_access', nameFallback: 'Pirate Shop Access', typeKey: 'treasure_type_item_shop_token', typeFallback: 'Item Shop Token ×2', img: 'assets/icons/pirate_token.png', dropRate: '137,500' }
         ]
     },
 
@@ -31606,7 +31702,14 @@ const TREASURE_HUNT_DATA = [
         endDate:   '2026-12-05T14:59:00+01:00',
         teaserImage: null,
         crewImg: 'assets/icons/jonesy.png',
-        items: []
+        items: [
+            { id: 'w5_1', nameKey: 'treasure_name_solid_gold_captain_x', nameFallback: 'Solid Gold Captain X', typeKey: 'treasure_type_outfit', typeFallback: 'Outfit', img: 'assets/icons/gold_captain_x.png', dropRate: '1,562,500' },
+            { id: 'w5_2', nameKey: 'treasure_name_gold_gwagon', nameFallback: 'Gold G-Wagon v2', typeKey: 'treasure_type_car', typeFallback: 'Car', img: 'assets/icons/gold_gwagon.png', dropRate: '7,813' },
+            { id: 'w5_3', nameKey: 'treasure_name_roasted_meat', nameFallback: 'Roasted Meat', typeKey: 'treasure_type_back_bling', typeFallback: 'Back Bling', img: 'assets/icons/roasted_meat.png', dropRate: '568' },
+            { id: 'w5_4', nameKey: 'treasure_name_i_follow_rivers', nameFallback: 'I Follow Rivers', typeKey: 'treasure_type_jam_track', typeFallback: 'Jam Track', img: 'assets/icons/i_follow_rivers.png', dropRate: '391' },
+            { id: 'w5_5', nameKey: 'treasure_name_jones_straw_hats', nameFallback: 'Jones and the Straw Hats', typeKey: 'treasure_type_loading_screen', typeFallback: 'Loading Screen', img: 'assets/icons/jones_straw_hats.png', dropRate: '272' },
+            { id: 'w5_6', nameKey: 'treasure_name_pirate_shop_access', nameFallback: 'Pirate Shop Access', typeKey: 'treasure_type_item_shop_token', typeFallback: 'Item Shop Token ×2', img: 'assets/icons/pirate_token.png', dropRate: '137,500' }
+        ]
     },
 
     {
@@ -31934,51 +32037,43 @@ function renderTreasureChecklist() {
             grid.className = 'treasure-items-grid';
             grid.id = 'grid_' + week.id;
 
-            // ─── 1. Items REALI ───
-
+                        // ─── 1. Items REALI ───
             week.items.forEach(item => {
                 const isChecked = checkedItems.includes(item.id);
                 const card = document.createElement('div');
                 card.className = 'treasure-item-card';
-		if (isChecked) card.classList.add('checked');
+                if (isChecked) card.classList.add('checked');
                 if (isUpcoming) card.classList.add('disabled');
+
                 const itemName = getTreasureText(item, 'name', lang);
                 const itemType = getTreasureText(item, 'type', lang);
 
-                // Drop Rate HTML
+                const dropRateHTML = item.dropRate ? `<div style="font-size:11px;color:#9aa6b2;margin-top:4px;font-weight:600;">📦 1 in ${item.dropRate}</div>` : '';
 
-                			const dropRateHTML = item.dropRate ? `<div style="font-size:11px;color:#9aa6b2;margin-top:4px;font-weight:600;">📦 1 in ${item.dropRate}</div>` : '';
-
-                			// Overlay lucchetto SOLO per upcoming
-
-                			const lockOverlay = isUpcoming
-
-                    			? `<div style="position:absolute; inset:0; background:rgba(0,0,0,0.55); display:flex; align-items:center; justify-content:center; border-radius:8px; font-size:22px; z-index:2; pointer-events:none;">🔒</div>`
-
-                   			 : '';
+                // Generiamo un ID univoco per il container dell'immagine
+                const imgId = 'img_' + item.id;
 
                 card.innerHTML = `
-
-                    <div style="position:relative; width:100%;">
-
+                    <div id="${imgId}_container" style="position:relative; width:100%;">
                         <img src="${item.img}" class="treasure-item-img"
-
-                             onerror="this.src='assets/ui/sprite-chest.png'">
-
-                        ${lockOverlay}
+                             onerror="
+                                 this.style.display='none';
+                                 document.getElementById('${imgId}_container').innerHTML = \`
+                                     <div class='treasure-placeholder-box'>
+                                         <span class='treasure-placeholder-question'>?</span>
+                                     </div>
+                                 \`;
+                             ">
                     </div>
                     <div class="treasure-item-name">${itemName}</div>
                     <div class="treasure-item-type">${itemType}</div>
-
-		    ${dropRateHTML}
+                    ${dropRateHTML}
                 `;
 
                 // Solo le settimane LIVE sono cliccabili
-
                 if (isLive) {
                     card.addEventListener('click', () => {
                         let current = [];
-
                         try { current = JSON.parse(localStorage.getItem('treasure_checked_items')) || []; }
                         catch (e) {}
 
@@ -31997,51 +32092,25 @@ function renderTreasureChecklist() {
                         }
                     });
                 }
+
                 grid.appendChild(card);
             });
 
             // ─── 2. Placeholder "?" per ricompense sconosciute ───
-
             for (let i = 0; i < placeholderCount; i++) {
                 const card = document.createElement('div');
                 card.className = 'treasure-item-card disabled';
 
-                card.style.cssText = `
-
-                    background: rgba(0,0,0,0.15) !important;
-                    border: 2px dashed rgba(168,85,247,0.35) !important;
-                    box-shadow: none !important;
-                `;
-
                 card.innerHTML = `
-
-                    <div style="
-
-                        width:100%; aspect-ratio:1;
-                        display:flex; align-items:center; justify-content:center;
-                        font-family: var(--font-heading);
-                        font-size:56px; font-weight:900;
-                        color:rgba(168,85,247,0.35);
-                        background:rgba(0,0,0,0.25);
-                        border-radius:8px; margin-bottom:8px;
-                        text-shadow: 0 0 20px rgba(168,85,247,0.2);
-
-                    ">?</div>
-
-                    <div class="treasure-item-name"
-
-                         style="color:var(--muted); font-style:italic;">
-
+                    <div class="treasure-placeholder-box">
+                        <span class="treasure-placeholder-question">?</span>
+                    </div>
+                    <div class="treasure-item-name" style="color:var(--muted); font-style:italic;">
                         ${t('treasure_unknown_reward', 'Unknown')}
                     </div>
-
-                    <div class="treasure-item-type"
-
-                         style="color:rgba(255,255,255,0.35);">
-
+                    <div class="treasure-item-type" style="color:rgba(255,255,255,0.35);">
                         ${t('treasure_coming_soon', 'Coming soon')}
                     </div>
-
                 `;
                 grid.appendChild(card);
             }
