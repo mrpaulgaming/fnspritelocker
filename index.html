@@ -15573,7 +15573,7 @@ const SPRITES = [
     variants: ["basic"],
     unreleasedVariants: [],
     rarity: "mythic",
-    unreleased: true,
+    unreleased: false,
     spawn: { basic: "0%" },
     obtain: { basic: "chest" },
     levelUp: "📦 Chests | 💀 Eliminations"
@@ -16481,6 +16481,7 @@ const SPRITE_NAME_TRANSLATIONS = {
 "Lil' Squibbly": "Mini Squibbly",
 "Transponder Snail": "Lumacofono",
 "Plundarrgh": "Saccheggiarr",
+"Squiplash": "Tentacolpo",
     },
 
     en: {
@@ -31623,7 +31624,6 @@ function closeSecretOverlay() {
 // Dati delle ricompense settimanali (puoi espanderli con le settimane future)
 
 const TREASURE_HUNT_DATA = [
-
     {
         id: 'week1',
         weekNumber: 1,
@@ -31632,16 +31632,14 @@ const TREASURE_HUNT_DATA = [
         teaserImage: null,
         crewImg: 'assets/icons/asap_rocky.png',
         items: [
-
-            { id: 'w1_1', nameKey: 'treasure_name_solid_gold_rugshand', nameFallback: 'Solid Gold Rugahand',      typeKey: 'treasure_type_outfit',         typeFallback: 'Outfit',            img: 'assets/icons/gold_asap.png', dropRate: '1,562,500' },
-            { id: 'w1_2', nameKey: 'treasure_name_solid_gold_gauntlets', nameFallback: 'Solid Gold Gauntlets',      typeKey: 'treasure_type_pickaxe',        typeFallback: 'Pickaxe',           img: 'assets/icons/gold_gauntlets.png', dropRate: '568' },
-            { id: 'w1_3', nameKey: 'treasure_name_no_trespassing',      nameFallback: 'NO TRESPASSING',            typeKey: 'treasure_type_jam_track',      typeFallback: 'Jam Track',         img: 'assets/icons/no_trespassing.png', dropRate: '391' },
-            { id: 'w1_4', nameKey: 'treasure_name_plunder_paradise',    nameFallback: 'Plunder in Paradise',       typeKey: 'treasure_type_loading_screen', typeFallback: 'Loading Screen',    img: 'assets/icons/plunder_in_paradise.png', dropRate: '272' },
-            { id: 'w1_5', nameKey: 'treasure_name_golden_llama_crew',   nameFallback: 'Golden Llama Crew',         typeKey: 'treasure_type_car',            typeFallback: 'Car',               img: 'assets/icons/g_wagon.png', dropRate: '7,813' },
-            { id: 'w1_6', nameKey: 'treasure_name_pirate_shop_access',  nameFallback: 'Pirate Shop Access',        typeKey: 'treasure_type_item_shop_token',typeFallback: 'Item Shop Token ×2',img: 'assets/icons/pirate_token.png', dropRate: '137,500' }
+            { id: 'w1_1', nameKey: 'treasure_name_solid_gold_rugshand', nameFallback: 'Solid Gold Rugahand', typeKey: 'treasure_type_outfit', typeFallback: 'Outfit', img: 'assets/icons/gold_asap.png', dropRate: '1,562,500' },
+            { id: 'w1_2', nameKey: 'treasure_name_golden_llama_crew', nameFallback: 'Golden Llama Crew', typeKey: 'treasure_type_car', typeFallback: 'Car', img: 'assets/icons/g_wagon.png', dropRate: '7,813' },
+            { id: 'w1_3', nameKey: 'treasure_name_solid_gold_gauntlets', nameFallback: 'Solid Gold Gauntlets', typeKey: 'treasure_type_pickaxe', typeFallback: 'Pickaxe', img: 'assets/icons/gold_gauntlets.png', dropRate: '568' },
+            { id: 'w1_4', nameKey: 'treasure_name_no_trespassing', nameFallback: 'NO TRESPASSING', typeKey: 'treasure_type_jam_track', typeFallback: 'Jam Track', img: 'assets/icons/no_trespassing.png', dropRate: '391' },
+            { id: 'w1_5', nameKey: 'treasure_name_plunder_paradise', nameFallback: 'Plunder in Paradise', typeKey: 'treasure_type_loading_screen', typeFallback: 'Loading Screen', img: 'assets/icons/plunder_in_paradise.png', dropRate: '272' },
+            { id: 'w1_6', nameKey: 'treasure_name_pirate_shop_access', nameFallback: 'Pirate Shop Access', typeKey: 'treasure_type_item_shop_token', typeFallback: 'Item Shop Token ×2', img: 'assets/icons/pirate_token.png', dropRate: '137,500' }
         ]
     },
-
     {
         id: 'week2',
         weekNumber: 2,
@@ -31650,16 +31648,14 @@ const TREASURE_HUNT_DATA = [
         teaserImage: null,
         crewImg: 'assets/icons/lil_uzi_vert.png',
         items: [
-
-            { id: 'w2_1', nameKey: 'treasure_name_solid_gold_uzi',   nameFallback: 'Solid Gold Lil Uzi Vert',       typeKey: 'treasure_type_outfit',         typeFallback: 'Outfit',            img: 'assets/icons/gold_lil_uzi.png', dropRate: '1,562,500' },
-            { id: 'w2_2', nameKey: 'treasure_name_lil_uzi_crew',     nameFallback: "Lil' Uzi Crew",                 typeKey: 'treasure_type_back_bling',     typeFallback: 'Back Bling',        img: 'assets/icons/lil_crew.png', dropRate: '568' },
-            { id: 'w2_3', nameKey: 'treasure_name_london',           nameFallback: 'London',                        typeKey: 'treasure_type_jam_track',      typeFallback: 'Jam Track',         img: 'assets/icons/london.png', dropRate: '391' },
-            { id: 'w2_4', nameKey: 'treasure_name_so_kawaii',        nameFallback: 'So Kawaii',                     typeKey: 'treasure_type_loading_screen', typeFallback: 'Loading Screen',    img: 'assets/icons/so_kawaii.png', dropRate: '272' },
-            { id: 'w2_5', nameKey: 'treasure_name_gold_cadillac',    nameFallback: 'Gold Cadillac CT5-V Blackwing', typeKey: 'treasure_type_car',            typeFallback: 'Car',               img: 'assets/icons/gold_cadillac.png', dropRate: '7,813' },
-            { id: 'w2_6', nameKey: 'treasure_name_pirate_shop_access', nameFallback: 'Pirate Shop Access',          typeKey: 'treasure_type_item_shop_token',typeFallback: 'Item Shop Token ×2',img: 'assets/icons/pirate_token.png', dropRate: '137,500' }
+            { id: 'w2_1', nameKey: 'treasure_name_solid_gold_uzi', nameFallback: 'Solid Gold Lil Uzi Vert', typeKey: 'treasure_type_outfit', typeFallback: 'Outfit', img: 'assets/icons/gold_lil_uzi.png', dropRate: '1,562,500' },
+            { id: 'w2_2', nameKey: 'treasure_name_gold_cadillac', nameFallback: 'Gold Cadillac CT5-V Blackwing', typeKey: 'treasure_type_car', typeFallback: 'Car', img: 'assets/icons/gold_cadillac.png', dropRate: '7,813' },
+            { id: 'w2_3', nameKey: 'treasure_name_lil_uzi_crew', nameFallback: "Lil' Uzi Crew", typeKey: 'treasure_type_back_bling', typeFallback: 'Back Bling', img: 'assets/icons/lil_crew.png', dropRate: '568' },
+            { id: 'w2_4', nameKey: 'treasure_name_london', nameFallback: 'London', typeKey: 'treasure_type_jam_track', typeFallback: 'Jam Track', img: 'assets/icons/london.png', dropRate: '391' },
+            { id: 'w2_5', nameKey: 'treasure_name_so_kawaii', nameFallback: 'So Kawaii', typeKey: 'treasure_type_loading_screen', typeFallback: 'Loading Screen', img: 'assets/icons/so_kawaii.png', dropRate: '272' },
+            { id: 'w2_6', nameKey: 'treasure_name_pirate_shop_access', nameFallback: 'Pirate Shop Access', typeKey: 'treasure_type_item_shop_token', typeFallback: 'Item Shop Token ×2', img: 'assets/icons/pirate_token.png', dropRate: '137,500' }
         ]
     },
-
     {
         id: 'week3',
         weekNumber: 3,
@@ -31668,23 +31664,21 @@ const TREASURE_HUNT_DATA = [
         teaserImage: null,
         crewImg: 'assets/icons/miku.png',
         items: [
-
             { id: 'w3_1', nameKey: 'treasure_name_solid_gold_miku', nameFallback: 'Solid Gold Miku', typeKey: 'treasure_type_outfit', typeFallback: 'Outfit', img: 'assets/icons/gold_miku.png', dropRate: '1,562,500' },
-			{ id: 'w3_2', nameKey: 'treasure_name_gold_chevrolet', nameFallback: 'Gold Chevrolet Corvette ZR1', typeKey: 'treasure_type_car', typeFallback: 'Car', img: 'assets/icons/gold_corvette.png', dropRate: '7,813' },
+            { id: 'w3_2', nameKey: 'treasure_name_gold_chevrolet', nameFallback: 'Gold Chevrolet Corvette ZR1', typeKey: 'treasure_type_car', typeFallback: 'Car', img: 'assets/icons/gold_corvette.png', dropRate: '7,813' },
             { id: 'w3_3', nameKey: 'treasure_name_mikus_takarabako', nameFallback: "Miku's Takarabako", typeKey: 'treasure_type_back_bling', typeFallback: 'Back Bling', img: 'assets/icons/mikus_takarabako.png', dropRate: '568' },
             { id: 'w3_4', nameKey: 'treasure_name_pppp', nameFallback: 'PPPP', typeKey: 'treasure_type_jam_track', typeFallback: 'Jam Track', img: 'assets/icons/pppp.png', dropRate: '391' },
             { id: 'w3_5', nameKey: 'treasure_name_may_fortnite_find_you', nameFallback: 'May Fortnite Find You', typeKey: 'treasure_type_loading_screen', typeFallback: 'Loading Screen', img: 'assets/icons/may_fortnite_find_you.png', dropRate: '272' },
             { id: 'w3_6', nameKey: 'treasure_name_pirate_shop_access', nameFallback: 'Pirate Shop Access', typeKey: 'treasure_type_item_shop_token', typeFallback: 'Item Shop Token ×2', img: 'assets/icons/pirate_token.png', dropRate: '137,500' }
         ]
     },
-
     {
         id: 'week4',
         weekNumber: 4,
         startDate: '2026-11-22T14:59:00+01:00',
         endDate:   '2026-11-29T14:59:00+01:00',
         teaserImage: null,
-        crewImg: 'assets/icons/oscar.png', 
+        crewImg: 'assets/icons/teto.png', 
         items: [
             { id: 'w4_1', nameKey: 'treasure_name_solid_gold_teto', nameFallback: 'Solid Gold Kasane Teto', typeKey: 'treasure_type_outfit', typeFallback: 'Outfit', img: 'assets/icons/gold_teto.png', dropRate: '1,562,500' },
             { id: 'w4_2', nameKey: 'treasure_name_gold_lamborghini', nameFallback: 'Gold Lamborghini Urus SE', typeKey: 'treasure_type_car', typeFallback: 'Car', img: 'assets/icons/gold_lamborghini.png', dropRate: '7,813' },
@@ -31694,14 +31688,13 @@ const TREASURE_HUNT_DATA = [
             { id: 'w4_6', nameKey: 'treasure_name_pirate_shop_access', nameFallback: 'Pirate Shop Access', typeKey: 'treasure_type_item_shop_token', typeFallback: 'Item Shop Token ×2', img: 'assets/icons/pirate_token.png', dropRate: '137,500' }
         ]
     },
-
     {
         id: 'week5',
         weekNumber: 5,
         startDate: '2026-11-29T14:59:00+01:00',
         endDate:   '2026-12-05T14:59:00+01:00',
         teaserImage: null,
-        crewImg: 'assets/icons/jonesy.png',
+        crewImg: 'assets/icons/captain_x.png',
         items: [
             { id: 'w5_1', nameKey: 'treasure_name_solid_gold_captain_x', nameFallback: 'Solid Gold Captain X', typeKey: 'treasure_type_outfit', typeFallback: 'Outfit', img: 'assets/icons/gold_captain_x.png', dropRate: '1,562,500' },
             { id: 'w5_2', nameKey: 'treasure_name_gold_gwagon', nameFallback: 'Gold G-Wagon v2', typeKey: 'treasure_type_car', typeFallback: 'Car', img: 'assets/icons/gold_gwagon.png', dropRate: '7,813' },
@@ -31711,7 +31704,6 @@ const TREASURE_HUNT_DATA = [
             { id: 'w5_6', nameKey: 'treasure_name_pirate_shop_access', nameFallback: 'Pirate Shop Access', typeKey: 'treasure_type_item_shop_token', typeFallback: 'Item Shop Token ×2', img: 'assets/icons/pirate_token.png', dropRate: '137,500' }
         ]
     },
-
     {
         id: 'finalEvent',
         isEvent: true,
