@@ -10392,6 +10392,67 @@ body.gold-mode .toast {
     width: 95px !important;  /* leggermente più piccolo per stare nella cassa */
     height: 95px !important;
 }
+
+/* Escludiamo le corone dall'effetto di zoom per non farle spostare/ruotare */
+.grid-card:hover img:not(.base-sprite-img):not(.fan-crown-img):not(.base-crown-img) {
+    transform: scale(1.08);
+}
+
+/* Corona PNG per il ventaglio */
+.fan-sprite .fan-crown-img {
+    position: absolute;
+    top: -2px;
+    left: 50%;
+    /* Annulla la rotazione del contenitore */
+    transform: translateX(-50%) rotate(calc(var(--offset, 0) * -11deg));
+    transform-origin: center center;
+    width: 20px;
+    height: auto;
+    z-index: 10;
+    pointer-events: none;
+    filter: drop-shadow(0 0 6px rgba(255, 211, 77, 0.8)) drop-shadow(0 2px 4px rgba(0, 0, 0, 0.6));
+    background: none !important;
+    animation: none !important; 
+}
+
+/* Corona PNG per lo sprite BASE (centrale) */
+.base-crown-img {
+    position: absolute;
+    top: 15px; 
+    left: 50%;
+    transform: translateX(-50%);
+    transform-origin: center center;
+    width: 32px;
+    height: auto;
+    z-index: 10;
+    pointer-events: none;
+    filter: drop-shadow(0 0 8px rgba(255, 211, 77, 0.9)) drop-shadow(0 2px 4px rgba(0, 0, 0, 0.6));
+    background: none !important;
+    animation: none !important; 
+    transition: opacity 0.3s ease, transform 0.35s cubic-bezier(.2,.9,.3,1);
+    opacity: 0; /* NASCOSTA DI DEFAULT */
+}
+
+/* Mostra la corona base quando la card è in hover o quando la tacchetta basic è in hover */
+.grid-card:hover .base-crown-img,
+.grid-card:has(.variant-segment[data-variant="basic"]:hover) .base-crown-img {
+    opacity: 1;
+}
+
+/* Quando la card è in hover, lo sprite base si rimpicciolisce. 
+   Facciamo seguire la corona per non farla "staccare" dalla testa. */
+.grid-card.fan-enabled:hover .base-crown-img {
+    transform: translateX(-50%) translateY(-4px) scale(0.75);
+}
+
+/* BLOCCO DEFINITIVO SHIMMER */
+.grid-art img.base-crown-img,
+.grid-art img.fan-crown-img {
+    background: none !important;
+    animation: none !important;
+    border: none !important;
+}
+
 </style>
 </head>
 <style>
@@ -21030,8 +21091,6 @@ function renderVariantSegments(container, sp, st) {
                         <span style="color:#fff;">${spriteName}</span>
                         <span class="fan-dot dot-${variant}"></span>
                         <span class="fan-variant-name" style="color:${getVariantColor(variant)};">${variantName}</span>
-
-                        ${isMastered ? ' 👑' : ''}
                     `;
                 }
 
@@ -24806,6 +24865,17 @@ async function buildGridView() {
 	img.onerror = () => img.src = placeholderSVG(sp.name);
 	img.className = 'base-sprite-img';
 	art.appendChild(img);
+	
+	// Controlla se TUTTE le varianti rilasciate sono masterate
+    const isAllMastered = releasedVariants.every(v => st.variants[v] && st.variantsMastered[v]);
+
+    // Aggiunge la corona base SOLO se la base è masterata MA non hai ancora masterato tutto lo sprite
+    if (st.variantsMastered?.['basic'] === true && st.variants['basic'] === true && !isAllMastered) {
+        const baseCrown = document.createElement('img');
+        baseCrown.src = 'assets/ui/mastered.png';
+        baseCrown.className = 'base-crown-img';
+        card.appendChild(baseCrown);
+    }
 
 	// 2) Ventaglio varianti
 
@@ -24842,6 +24912,15 @@ async function buildGridView() {
 			const isOwnedVariant = st.variants[variant] === true;
 			const isMasteredVariant = st.variantsMastered?.[variant] === true;
 			const isUnreleasedVariant = (sp.unreleasedVariants || []).includes(variant);
+			
+			// Aggiunge la corona solo se la variante è EFFETTIVAMENTE posseduta e masterata
+            if (isMasteredVariant && isOwnedVariant) {
+                const crownImg = document.createElement('img');
+                crownImg.src = 'assets/ui/mastered.png';
+                crownImg.className = 'fan-crown-img';
+                fanItem.appendChild(crownImg);
+            }
+			
 			if (!isOwnedVariant && !isUnreleasedVariant) {
 				fanItem.classList.add('fan-missing');
 			}
@@ -24858,8 +24937,6 @@ async function buildGridView() {
 						<span style="color:#fff;">${spriteName}</span>
 						<span class="fan-dot dot-${variant}"></span>
 						<span class="fan-variant-name" style="color:${getVariantColor(variant)};">${variantName}</span>
-
-						${isMasteredVariant ? ' 👑' : ''}
 					`;
 				}
 
