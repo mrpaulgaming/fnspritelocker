@@ -10807,6 +10807,111 @@ body.season-7-5 .variant-segment[data-variant="gold"] {
     background: linear-gradient(135deg, #1A002A 0%, #7B2CBF 35%, #D946EF 70%, #FF2E63 100%) !important;
 }
 
+
+/* ===== MORE MENU - COLORED BUTTON BORDERS ===== */
+
+/* Il bordo riprende automaticamente il colore del testo.
+   Non modifica sfondo, testo o hover personalizzati. */
+#more-menu button.btn-adaptive {
+    border: 1px solid color-mix(in srgb, currentColor 38%, transparent) !important;
+    border-radius: 9px;
+}
+
+/* Focus accessibile da tastiera */
+#more-menu button.btn-adaptive:focus-visible {
+    outline: 2px solid currentColor;
+    outline-offset: 2px;
+}
+
+
+/* ===== LOBBY CODES - CIANO ===== */
+
+#btn-codes-s4 {
+    background: rgba(0, 212, 255, 0.055) !important;
+    border-color: rgba(0, 212, 255, 0.4) !important;
+    color: #67e8f9 !important;
+}
+
+#btn-codes-s4:hover {
+    background: rgba(0, 212, 255, 0.15) !important;
+    border-color: #22d3ee !important;
+    box-shadow: 0 0 14px rgba(0, 212, 255, 0.2);
+}
+
+
+/* ===== OVERRIDES - VIOLA ===== */
+
+#btn-overrides {
+    background: linear-gradient(
+        110deg,
+        rgba(168, 85, 247, 0.12),
+        rgba(126, 34, 206, 0.055)
+    ) !important;
+
+    border: 1px solid rgba(168, 85, 247, 0.5) !important;
+    color: #d8a5ff !important;
+
+    box-shadow:
+        0 0 10px rgba(168, 85, 247, 0.08),
+        inset 0 0 10px rgba(168, 85, 247, 0.035);
+
+    transition: all 0.3s ease !important;
+}
+
+#btn-overrides:hover {
+    background: linear-gradient(
+        110deg,
+        rgba(168, 85, 247, 0.25),
+        rgba(126, 34, 206, 0.14)
+    ) !important;
+
+    border-color: #d8a5ff !important;
+    color: #ffffff !important;
+
+    box-shadow:
+        0 0 25px rgba(168, 85, 247, 0.35),
+        inset 0 0 15px rgba(168, 85, 247, 0.12);
+
+    transform: translateY(-3px) scale(1.05);
+}
+
+
+/* ===== TREASURES - ORO ===== */
+
+#btn-treasures {
+    background: linear-gradient(
+        110deg,
+        rgba(255, 190, 55, 0.13),
+        rgba(217, 119, 6, 0.055)
+    ) !important;
+
+    border: 1px solid rgba(255, 190, 55, 0.5) !important;
+    color: #ffda85 !important;
+
+    box-shadow:
+        0 0 10px rgba(255, 190, 55, 0.08),
+        inset 0 0 10px rgba(255, 190, 55, 0.035);
+
+    transition: all 0.3s ease !important;
+}
+
+#btn-treasures:hover {
+    background: linear-gradient(
+        110deg,
+        rgba(255, 190, 55, 0.26),
+        rgba(217, 119, 6, 0.15)
+    ) !important;
+
+    border-color: #ffe09a !important;
+    color: #ffffff !important;
+
+    box-shadow:
+        0 0 25px rgba(255, 190, 55, 0.32),
+        inset 0 0 15px rgba(255, 190, 55, 0.12);
+
+    transform: translateY(-3px) scale(1.05);
+}
+
 </style>
 </head>
 <style>
@@ -13192,11 +13297,9 @@ body.retro-mode select option {
 				<button class="btn-adaptive ghost" id="btn-settings" data-i18n="settings" style="width:100%; text-align:left;">⚙️ Settings</button>
 				<button class="btn-adaptive ghost" id="btn-shortcuts-mobile" data-i18n="shortcuts_mobile" style="width:100%; text-align:left;">⚡ Shortcuts</button>
 				<button class="btn-adaptive ghost" id="btn-codes-s4" data-i18n="lobby_codes" style="width:100%; text-align:left;">📋 Lobby Codes S4</button>
-				<button class="btn-adaptive ghost" id="btn-garden" style="width:100%; text-align:left;">
-
-				  🌱 <span data-i18n="garden_title">Sprite Garden</span>
-
-				</button>
+				<button class="btn-adaptive ghost" id="btn-overrides" data-i18n="menu_overrides" style="width:100%; text-align:left;">⚡ Overrides List </button>
+				<button class="btn-adaptive ghost" id="btn-treasures" data-i18n="menu_treasures" style="width:100%; text-align:left; display:none;">💎 Lista Tesori</button>
+				<button class="btn-adaptive ghost" id="btn-garden" style="width:100%; text-align:left;"> 🌱 <span data-i18n="garden_title">Sprite Garden</span></button>
 				<button class="btn-adaptive ghost" id="btn-planner" data-i18n="calculator_title" style="width:100%; text-align:left;">🧮 Sprite Dust Calculator</button>
 				<button class="btn-adaptive ghost" id="btn-map" data-i18n="map" style="width:100%; text-align:left;">🗺️ Map</button>
 				<button class="btn-adaptive ghost" id="btn-pod" data-i18n="pod" style="width:100%; text-align:left;">🎒 Mastery Pod</button>
@@ -18513,74 +18616,74 @@ const TRANSLATIONS = {
 		shortcut_studio: "Apri Sprite Studio",
 		marker_cat_npcs: "👥 Personaggi",
 		sm_hunt_level_1: "Inizio",
-    					 sm_hunt_level_2: "Incrocio",
-   					  sm_hunt_level_3: "Pilastri",
-    					  sm_hunt_level_4: "Labirinto",
-    					  sm_hunt_level_5: "Caos",
+		sm_hunt_level_2: "Incrocio",
+		sm_hunt_level_3: "Pilastri",
+		sm_hunt_level_4: "Labirinto",
+		sm_hunt_level_5: "Caos",
 		season_7_5: "Capitolo 7 S5 - Cacciatori di Tesori",
 		banner_title_season5: "CAPITOLO 7 • STAGIONE 5",
 		variant_fortune: "Fortuna",
-variant_cursed: "Maledetto",
-bonus_fortune: "Rivela i forzieri vicini",
-bonus_cursed: "Maggiore possibilità di trovare Sprite rari, subisci danni in acqua",
-shortcut_secret: "Overlay Tesori (solo C7S5)",
+		variant_cursed: "Maledetto",
+		bonus_fortune: "Rivela i forzieri vicini",
+		bonus_cursed: "Maggiore possibilità di trovare Sprite rari, subisci danni in acqua",
+		shortcut_secret: "Overlay Tesori (solo C7S5)",
         treasures_title: "💎 Lista dei Tesori",
         treasures_draw: "✏️ Disegna",
         treasures_eraser: "🧹 Gomma",
         treasures_clear: "🗑️ Pulisci tutto",
         treasures_color: "Colore:",
-achievement_collector_s5_title: "Collezionista C7S5",
-achievement_collector_s5_desc: "Ottieni almeno una variante di ogni Sprite della Stagione 5 del Capitolo 7",
-achievement_master_s5_title: "Maestro C7S5",
-achievement_master_s5_desc: "Padroneggia tutti gli Sprite della Stagione 5 del Capitolo 7 (tutte le varianti al livello 5)",
-achievement_fortune_collector_title: "Cacciatore di Fortuna",
-achievement_fortune_collector_desc: "Ottieni tutte le varianti Fortuna di tutti gli Sprite",
-achievement_cursed_collector_title: "Cacciatore Maledetto",
-achievement_cursed_collector_desc: "Ottieni tutte le varianti Maledette di tutti gli Sprite",
-season5_subtitle: "STAGIONE 5 · COMPLETATA",
-shortcut_coin_rain: "Modalità Dorata (solo S5)",
-treasure_title: "💎 Caccia al Tesoro",
-treasure_description: "Apri forzieri in Battle Royale per trovare tesori dorati. Nuovi tesori ogni settimana.",
-treasure_week_1_title: "SETTIMANA 1",
-treasure_week_2_title: "SETTIMANA 2",
-treasure_week_3_title: "SETTIMANA 3",
-treasure_week_4_title: "SETTIMANA 4",
-treasure_week_5_title: "SETTIMANA 5",
-treasure_status_live: "Attiva",
-treasure_status_coming_soon: "In arrivo",
-treasure_status_ended: "Terminata",
-treasure_found_counter: "{owned}/{total} trovati",
-treasure_since_date: "Dal {date}",
-treasure_starts_on: "Inizia {date}",
-treasure_ended_on: "Terminata il {date}",
-treasure_revealed_on: "Rivelata {date}",
-treasure_in_time: "Tra {d}g {h}h",
-treasure_type_outfit: "Completo",
-treasure_type_pickaxe: "Piccone",
-treasure_type_jam_track: "Brano Jam",
-treasure_type_loading_screen: "Schermata di caricamento",
-treasure_type_car: "Auto",
-treasure_type_back_bling: "Zaino",
-treasure_type_item_shop_token: "Token Negozio Oggetti ×2",
-treasure_name_solid_gold_rugshand: "Rugahand d'Oro Massiccio",
-treasure_name_solid_gold_gauntlets: "Guanti d'Oro Massiccio",
-treasure_name_no_trespassing: "VIETATO L'INGRESSO",
-treasure_name_plunder_paradise: "Saccheggio in Paradiso",
-treasure_name_golden_llama_crew: "G-Wagon d'Oro",
-treasure_name_pirate_shop_access: "Accesso Negozio Pirata",
-treasure_name_solid_gold_uzi: "Lil Uzi Vert d'Oro Massiccio",
-treasure_name_lil_uzi_crew: "Ciurma di Lil' Uzi",
-treasure_name_london: "London",
-treasure_name_so_kawaii: "Così Kawaii",
-treasure_name_gold_cadillac: "Cadillac CT5-V Blackwing d'Oro",
-treasure_final_event_title: 'EVENTO DI FINE CAPITOLO',
-treasure_final_event_desc: 'La caccia finisce qui. Il più grande tesoro di sempre viene rivelato – raduna la tua ciurma e sii presente quando tutto cambierà. Completa tutte le missioni dei frammenti della mappa per sbloccare una schermata di caricamento.',
-treasure_name_solid_gold_miku: "Miku d'Oro Massiccio",
-treasure_name_solid_gold_oscar: "Oscar d'Oro Massiccio",
-treasure_unknown_reward: "Sconosciuto",
-treasure_coming_soon:    "In arrivo",
-treasure_week_ended_toast: "Questa settimana è terminata. Non puoi più modificare i progressi.",
-treasure_in_minutes: "Tra {m}m",
+		achievement_collector_s5_title: "Collezionista C7S5",
+		achievement_collector_s5_desc: "Ottieni almeno una variante di ogni Sprite della Stagione 5 del Capitolo 7",
+		achievement_master_s5_title: "Maestro C7S5",
+		achievement_master_s5_desc: "Padroneggia tutti gli Sprite della Stagione 5 del Capitolo 7 (tutte le varianti al livello 5)",
+		achievement_fortune_collector_title: "Cacciatore di Fortuna",
+		achievement_fortune_collector_desc: "Ottieni tutte le varianti Fortuna di tutti gli Sprite",
+		achievement_cursed_collector_title: "Cacciatore Maledetto",
+		achievement_cursed_collector_desc: "Ottieni tutte le varianti Maledette di tutti gli Sprite",
+		season5_subtitle: "STAGIONE 5 · COMPLETATA",
+		shortcut_coin_rain: "Modalità Dorata (solo S5)",
+		treasure_title: "💎 Caccia al Tesoro",
+		treasure_description: "Apri forzieri in Battle Royale per trovare tesori dorati. Nuovi tesori ogni settimana.",
+		treasure_week_1_title: "SETTIMANA 1",
+		treasure_week_2_title: "SETTIMANA 2",
+		treasure_week_3_title: "SETTIMANA 3",
+		treasure_week_4_title: "SETTIMANA 4",
+		treasure_week_5_title: "SETTIMANA 5",
+		treasure_status_live: "Attiva",
+		treasure_status_coming_soon: "In arrivo",
+		treasure_status_ended: "Terminata",
+		treasure_found_counter: "{owned}/{total} trovati",
+		treasure_since_date: "Dal {date}",
+		treasure_starts_on: "Inizia {date}",
+		treasure_ended_on: "Terminata il {date}",
+		treasure_revealed_on: "Rivelata {date}",
+		treasure_in_time: "Tra {d}g {h}h",
+		treasure_type_outfit: "Completo",
+		treasure_type_pickaxe: "Piccone",
+		treasure_type_jam_track: "Brano Jam",
+		treasure_type_loading_screen: "Schermata di caricamento",
+		treasure_type_car: "Auto",
+		treasure_type_back_bling: "Zaino",
+		treasure_type_item_shop_token: "Token Negozio Oggetti ×2",
+		treasure_name_solid_gold_rugshand: "Rugahand d'Oro Massiccio",
+		treasure_name_solid_gold_gauntlets: "Guanti d'Oro Massiccio",
+		treasure_name_no_trespassing: "VIETATO L'INGRESSO",
+		treasure_name_plunder_paradise: "Saccheggio in Paradiso",
+		treasure_name_golden_llama_crew: "G-Wagon d'Oro",
+		treasure_name_pirate_shop_access: "Accesso Negozio Pirata",
+		treasure_name_solid_gold_uzi: "Lil Uzi Vert d'Oro Massiccio",
+		treasure_name_lil_uzi_crew: "Ciurma di Lil' Uzi",
+		treasure_name_london: "London",
+		treasure_name_so_kawaii: "Così Kawaii",
+		treasure_name_gold_cadillac: "Cadillac CT5-V Blackwing d'Oro",
+		treasure_final_event_title: 'EVENTO DI FINE CAPITOLO',
+		treasure_final_event_desc: 'La caccia finisce qui. Il più grande tesoro di sempre viene rivelato – raduna la tua ciurma e sii presente quando tutto cambierà. Completa tutte le missioni dei frammenti della mappa per sbloccare una schermata di caricamento.',
+		treasure_name_solid_gold_miku: "Miku d'Oro Massiccio",
+		treasure_name_solid_gold_oscar: "Oscar d'Oro Massiccio",
+		treasure_unknown_reward: "Sconosciuto",
+		treasure_coming_soon:    "In arrivo",
+		treasure_week_ended_toast: "Questa settimana è terminata. Non puoi più modificare i progressi.",
+		treasure_in_minutes: "Tra {m}m",
         treasure_name_gold_chevrolet: "Chevrolet Corvette ZR1 d'Oro",
         treasure_name_mikus_takarabako: "Takarabako di Miku",
         treasure_name_pppp: "PPPP",
@@ -18597,6 +18700,8 @@ treasure_in_minutes: "Tra {m}m",
         treasure_name_jones_straw_hats: "Jones e i Cappelli di Paglia",
 		treasure_name_solid_gold_high_tide: "Alta Marea e Wavecutter d'Oro Massiccio",
 		treasure_name_wellerman: "Wellerman",
+		menu_overrides: "⚡ Lista Overrides",
+		menu_treasures: "💎 Lista Tesori",
     },
 
     en: {
@@ -19243,67 +19348,67 @@ treasure_in_minutes: "Tra {m}m",
 		season_7_5: "Chapter 7 S5 - Treasure Hunters",
 		banner_title_season5: "CHAPTER 7 • SEASON 5",
 		variant_fortune: "Fortune",
-variant_cursed: "Cursed",
-bonus_fortune: "Reveals nearby Chests",
-bonus_cursed: "Increased chance of finding rare Sprites, take damage in water",
-shortcut_secret: "Treasures Overlay (C7S5 only)",
+		variant_cursed: "Cursed",
+		bonus_fortune: "Reveals nearby Chests",
+		bonus_cursed: "Increased chance of finding rare Sprites, take damage in water",
+		shortcut_secret: "Treasures Overlay (C7S5 only)",
         treasures_title: "💎 Treasures Checklist",
         treasures_draw: "✏️ Draw",
         treasures_eraser: "🧹 Eraser",
         treasures_clear: "🗑️ Clear All",
         treasures_color: "Color:",
-achievement_collector_s5_title: "C7S5 Collector",
-achievement_collector_s5_desc: "Acquire at least one variant of every Chapter 7 Season 5 Sprite",
-achievement_master_s5_title: "C7S5 Master",
-achievement_master_s5_desc: "Master all Chapter 7 Season 5 Sprites (all variants at level 5)",
-achievement_fortune_collector_title: "Fortune Hunter",
-achievement_fortune_collector_desc: "Acquire all Fortune variants of every Sprite",
-achievement_cursed_collector_title: "Cursed Hunter",
-achievement_cursed_collector_desc: "Acquire all Cursed variants of every Sprite",
-season5_subtitle: "SEASON 5 · COMPLETE",
-shortcut_coin_rain: "Toggle Golden Mode (S5 only)",
-treasure_title: "💎 Treasure Hunt",
-treasure_description: "Open chests in Battle Royale for a chance to find gold treasure. New treasure arrives every week.",
-treasure_week_1_title: "WEEK 1",
-treasure_week_2_title: "WEEK 2",
-treasure_week_3_title: "WEEK 3",
-treasure_week_4_title: "WEEK 4",
-treasure_week_5_title: "WEEK 5",
-treasure_status_live: "Live",
-treasure_status_coming_soon: "Coming Soon",
-treasure_status_ended: "Ended",
-treasure_found_counter: "{owned}/{total} found",
-treasure_since_date: "Since {date}",
-treasure_starts_on: "Starts {date}",
-treasure_ended_on: "Ended on {date}",
-treasure_revealed_on: "Revealed on {date}",
-treasure_in_time: "In {d}d {h}h",
-treasure_type_outfit: "Outfit",
-treasure_type_pickaxe: "Pickaxe",
-treasure_type_jam_track: "Jam Track",
-treasure_type_loading_screen: "Loading Screen",
-treasure_type_car: "Car",
-treasure_type_back_bling: "Back Bling",
-treasure_type_item_shop_token: "Item Shop Token ×2",
-treasure_name_solid_gold_rugshand: "Solid Gold Rugahand",
-treasure_name_solid_gold_gauntlets: "Solid Gold Gauntlets",
-treasure_name_no_trespassing: "NO TRESPASSING",
-treasure_name_plunder_paradise: "Plunder in Paradise",
-treasure_name_golden_llama_crew: "Gold G-Wagon",
-treasure_name_pirate_shop_access: "Pirate Shop Access",
-treasure_name_solid_gold_uzi: "Solid Gold Lil Uzi Vert",
-treasure_name_lil_uzi_crew: "Lil' Uzi Crew",
-treasure_name_london: "London",
-treasure_name_so_kawaii: "So Kawaii",
-treasure_name_gold_cadillac: "Gold Cadillac CT5-V Blackwing",
-treasure_final_event_title: 'END OF CHAPTER EVENT',
-treasure_final_event_desc: 'The hunt ends here. The greatest treasure of all time is revealed – gather your crew and be there when everything changes. Complete all map fragment quests to unlock a loading screen.',
-treasure_name_solid_gold_miku: "Solid Gold Miku",
-treasure_name_solid_gold_oscar: "Solid Gold Oscar",
-treasure_unknown_reward: "Unknown",
-treasure_coming_soon:    "Coming soon",
-treasure_week_ended_toast: "This week has ended. You can no longer modify your progress.",
-treasure_in_minutes: "In {m}m",
+		achievement_collector_s5_title: "C7S5 Collector",
+		achievement_collector_s5_desc: "Acquire at least one variant of every Chapter 7 Season 5 Sprite",
+		achievement_master_s5_title: "C7S5 Master",
+		achievement_master_s5_desc: "Master all Chapter 7 Season 5 Sprites (all variants at level 5)",
+		achievement_fortune_collector_title: "Fortune Hunter",
+		achievement_fortune_collector_desc: "Acquire all Fortune variants of every Sprite",
+		achievement_cursed_collector_title: "Cursed Hunter",
+		achievement_cursed_collector_desc: "Acquire all Cursed variants of every Sprite",
+		season5_subtitle: "SEASON 5 · COMPLETE",
+		shortcut_coin_rain: "Toggle Golden Mode (S5 only)",
+		treasure_title: "💎 Treasure Hunt",
+		treasure_description: "Open chests in Battle Royale for a chance to find gold treasure. New treasure arrives every week.",
+		treasure_week_1_title: "WEEK 1",
+		treasure_week_2_title: "WEEK 2",
+		treasure_week_3_title: "WEEK 3",
+		treasure_week_4_title: "WEEK 4",
+		treasure_week_5_title: "WEEK 5",
+		treasure_status_live: "Live",
+		treasure_status_coming_soon: "Coming Soon",
+		treasure_status_ended: "Ended",
+		treasure_found_counter: "{owned}/{total} found",
+		treasure_since_date: "Since {date}",
+		treasure_starts_on: "Starts {date}",
+		treasure_ended_on: "Ended on {date}",
+		treasure_revealed_on: "Revealed on {date}",
+		treasure_in_time: "In {d}d {h}h",
+		treasure_type_outfit: "Outfit",
+		treasure_type_pickaxe: "Pickaxe",
+		treasure_type_jam_track: "Jam Track",
+		treasure_type_loading_screen: "Loading Screen",
+		treasure_type_car: "Car",
+		treasure_type_back_bling: "Back Bling",
+		treasure_type_item_shop_token: "Item Shop Token ×2",
+		treasure_name_solid_gold_rugshand: "Solid Gold Rugahand",
+		treasure_name_solid_gold_gauntlets: "Solid Gold Gauntlets",
+		treasure_name_no_trespassing: "NO TRESPASSING",
+		treasure_name_plunder_paradise: "Plunder in Paradise",
+		treasure_name_golden_llama_crew: "Gold G-Wagon",
+		treasure_name_pirate_shop_access: "Pirate Shop Access",
+		treasure_name_solid_gold_uzi: "Solid Gold Lil Uzi Vert",
+		treasure_name_lil_uzi_crew: "Lil' Uzi Crew",
+		treasure_name_london: "London",
+		treasure_name_so_kawaii: "So Kawaii",
+		treasure_name_gold_cadillac: "Gold Cadillac CT5-V Blackwing",
+		treasure_final_event_title: 'END OF CHAPTER EVENT',
+		treasure_final_event_desc: 'The hunt ends here. The greatest treasure of all time is revealed – gather your crew and be there when everything changes. Complete all map fragment quests to unlock a loading screen.',
+		treasure_name_solid_gold_miku: "Solid Gold Miku",
+		treasure_name_solid_gold_oscar: "Solid Gold Oscar",
+		treasure_unknown_reward: "Unknown",
+		treasure_coming_soon:    "Coming soon",
+		treasure_week_ended_toast: "This week has ended. You can no longer modify your progress.",
+		treasure_in_minutes: "In {m}m",
         treasure_name_gold_chevrolet: "Gold Chevrolet Corvette ZR1",
         treasure_name_mikus_takarabako: "Miku's Takarabako",
         treasure_name_pppp: "PPPP",
@@ -19320,6 +19425,8 @@ treasure_in_minutes: "In {m}m",
         treasure_name_jones_straw_hats: "Jones and the Straw Hats",
 		treasure_name_solid_gold_high_tide: "Solid Gold High Tide and Wavecutter",
 		treasure_name_wellerman: "Wellerman",
+		menu_overrides: "⚡ Overrides List",
+		menu_treasures: "💎 Treasures List",
 	},
 
     es: {
@@ -19967,67 +20074,67 @@ treasure_in_minutes: "In {m}m",
 		season_7_5: "Capítulo 7 T5 - Cazadores de Tesoros",
 		banner_title_season5: "CAPÍTULO 7 • TEMPORADA 5",
 		variant_fortune: "Fortuna",
-variant_cursed: "Maldito",
-bonus_fortune: "Revela los cofres cercanos",
-bonus_cursed: "Mayor probabilidad de encontrar Sprites raros, recibe daño en el agua",
-shortcut_secret: "Superposición del tesoro (solo C7S5)",
+		variant_cursed: "Maldito",
+		bonus_fortune: "Revela los cofres cercanos",
+		bonus_cursed: "Mayor probabilidad de encontrar Sprites raros, recibe daño en el agua",
+		shortcut_secret: "Superposición del tesoro (solo C7S5)",
         treasures_title: "💎 Lista de Tesoros",
         treasures_draw: "✏️ Dibujar",
         treasures_eraser: "🧹 Borrador",
         treasures_clear: "🗑️ Limpiar todo",
         treasures_color: "Color:",
-achievement_collector_s5_title: "Coleccionista C7T5",
-achievement_collector_s5_desc: "Obtén al menos una variante de cada Sprite de la Temporada 5 del Capítulo 7",
-achievement_master_s5_title: "Maestro C7T5",
-achievement_master_s5_desc: "Domina todos los Sprite de la Temporada 5 del Capítulo 7 (todas las variantes al nivel 5)",
-achievement_fortune_collector_title: "Cazador de Fortuna",
-achievement_fortune_collector_desc: "Obtén todas las variantes Fortuna de todos los Sprite",
-achievement_cursed_collector_title: "Cazador Maldito",
-achievement_cursed_collector_desc: "Obtén todas las variantes Malditas de todos los Sprite",
-season5_subtitle: "TEMPORADA 5 · COMPLETADA",
-shortcut_coin_rain: "Modo Dorado (solo S5)",
-treasure_title: "💎 Caza del Tesoro",
-treasure_description: "Abre cofres en Battle Royale para tener la oportunidad de encontrar tesoros dorados. Nuevos tesoros cada semana.",
-treasure_week_1_title: "SEMANA 1",
-treasure_week_2_title: "SEMANA 2",
-treasure_week_3_title: "SEMANA 3",
-treasure_week_4_title: "SEMANA 4",
-treasure_week_5_title: "SEMANA 5",
-treasure_status_live: "Activa",
-treasure_status_coming_soon: "Próximamente",
-treasure_status_ended: "Finalizada",
-treasure_found_counter: "{owned}/{total} encontrados",
-treasure_since_date: "Desde {date}",
-treasure_starts_on: "Comienza {date}",
-treasure_ended_on: "Terminó el {date}",
-treasure_revealed_on: "Revelado el {date}",
-treasure_in_time: "En {d}d {h}h",
-treasure_type_outfit: "Atuendo",
-treasure_type_pickaxe: "Pico",
-treasure_type_jam_track: "Pista Jam",
-treasure_type_loading_screen: "Pantalla de carga",
-treasure_type_car: "Coche",
-treasure_type_back_bling: "Mochila",
-treasure_type_item_shop_token: "Token de la Tienda ×2",
-treasure_name_solid_gold_rugshand: "Rugahand de Oro Macizo",
-treasure_name_solid_gold_gauntlets: "Guanteletes de Oro Macizo",
-treasure_name_no_trespassing: "PROHIBIDO EL PASO",
-treasure_name_plunder_paradise: "Saqueo en el Paraíso",
-treasure_name_golden_llama_crew: "Tripulación del Llama de Oro",
-treasure_name_pirate_shop_access: "Acceso a la Tienda Pirata",
-treasure_name_solid_gold_uzi: "Lil Uzi Vert de Oro Macizo",
-treasure_name_lil_uzi_crew: "Tripulación de Lil' Uzi",
-treasure_name_london: "London",
-treasure_name_so_kawaii: "Tan Kawaii",
-treasure_name_gold_cadillac: "Cadillac CT5-V Blackwing de Oro",
-treasure_final_event_title: 'EVENTO DE FIN DE CAPÍTULO',
-treasure_final_event_desc: 'La caza termina aquí. Se revela el mayor tesoro de todos los tiempos – reúne a tu tripulación y estate presente cuando todo cambie. Completa todas las misiones de los fragmentos del mapa para desbloquear una pantalla de carga.',
-treasure_name_solid_gold_miku: "Miku de Oro Macizo",
-treasure_name_solid_gold_oscar: "Oscar de Oro Macizo",
-treasure_unknown_reward: "Desconocido",
-treasure_coming_soon:    "Próximamente",
-treasure_week_ended_toast: "Esta semana ha terminado. Ya no puedes modificar tu progreso.",
-treasure_in_minutes: "En {m}m",
+		achievement_collector_s5_title: "Coleccionista C7T5",
+		achievement_collector_s5_desc: "Obtén al menos una variante de cada Sprite de la Temporada 5 del Capítulo 7",
+		achievement_master_s5_title: "Maestro C7T5",
+		achievement_master_s5_desc: "Domina todos los Sprite de la Temporada 5 del Capítulo 7 (todas las variantes al nivel 5)",
+		achievement_fortune_collector_title: "Cazador de Fortuna",
+		achievement_fortune_collector_desc: "Obtén todas las variantes Fortuna de todos los Sprite",
+		achievement_cursed_collector_title: "Cazador Maldito",
+		achievement_cursed_collector_desc: "Obtén todas las variantes Malditas de todos los Sprite",
+		season5_subtitle: "TEMPORADA 5 · COMPLETADA",
+		shortcut_coin_rain: "Modo Dorado (solo S5)",
+		treasure_title: "💎 Caza del Tesoro",
+		treasure_description: "Abre cofres en Battle Royale para tener la oportunidad de encontrar tesoros dorados. Nuevos tesoros cada semana.",
+		treasure_week_1_title: "SEMANA 1",
+		treasure_week_2_title: "SEMANA 2",
+		treasure_week_3_title: "SEMANA 3",
+		treasure_week_4_title: "SEMANA 4",
+		treasure_week_5_title: "SEMANA 5",
+		treasure_status_live: "Activa",
+		treasure_status_coming_soon: "Próximamente",
+		treasure_status_ended: "Finalizada",
+		treasure_found_counter: "{owned}/{total} encontrados",
+		treasure_since_date: "Desde {date}",
+		treasure_starts_on: "Comienza {date}",
+		treasure_ended_on: "Terminó el {date}",
+		treasure_revealed_on: "Revelado el {date}",
+		treasure_in_time: "En {d}d {h}h",
+		treasure_type_outfit: "Atuendo",
+		treasure_type_pickaxe: "Pico",
+		treasure_type_jam_track: "Pista Jam",
+		treasure_type_loading_screen: "Pantalla de carga",
+		treasure_type_car: "Coche",
+		treasure_type_back_bling: "Mochila",
+		treasure_type_item_shop_token: "Token de la Tienda ×2",
+		treasure_name_solid_gold_rugshand: "Rugahand de Oro Macizo",
+		treasure_name_solid_gold_gauntlets: "Guanteletes de Oro Macizo",
+		treasure_name_no_trespassing: "PROHIBIDO EL PASO",
+		treasure_name_plunder_paradise: "Saqueo en el Paraíso",
+		treasure_name_golden_llama_crew: "Tripulación del Llama de Oro",
+		treasure_name_pirate_shop_access: "Acceso a la Tienda Pirata",
+		treasure_name_solid_gold_uzi: "Lil Uzi Vert de Oro Macizo",
+		treasure_name_lil_uzi_crew: "Tripulación de Lil' Uzi",
+		treasure_name_london: "London",
+		treasure_name_so_kawaii: "Tan Kawaii",
+		treasure_name_gold_cadillac: "Cadillac CT5-V Blackwing de Oro",
+		treasure_final_event_title: 'EVENTO DE FIN DE CAPÍTULO',
+		treasure_final_event_desc: 'La caza termina aquí. Se revela el mayor tesoro de todos los tiempos – reúne a tu tripulación y estate presente cuando todo cambie. Completa todas las misiones de los fragmentos del mapa para desbloquear una pantalla de carga.',
+		treasure_name_solid_gold_miku: "Miku de Oro Macizo",
+		treasure_name_solid_gold_oscar: "Oscar de Oro Macizo",
+		treasure_unknown_reward: "Desconocido",
+		treasure_coming_soon:    "Próximamente",
+		treasure_week_ended_toast: "Esta semana ha terminado. Ya no puedes modificar tu progreso.",
+		treasure_in_minutes: "En {m}m",
         treasure_name_gold_chevrolet: "Chevrolet Corvette ZR1 de Oro",
         treasure_name_mikus_takarabako: "Takarabako de Miku",
         treasure_name_pppp: "PPPP",
@@ -20044,6 +20151,8 @@ treasure_in_minutes: "En {m}m",
         treasure_name_jones_straw_hats: "Jones y los Sombreros de Paja",
 		treasure_name_solid_gold_high_tide: "Marea Alta y Wavecutter de Oro Macizo",
 		treasure_name_wellerman: "Wellerman",
+		menu_overrides: "⚡ Lista de Overrides",
+		menu_treasures: "💎 Lista de Tesoros",
 	},
 
     fr: {
@@ -20689,67 +20798,67 @@ treasure_in_minutes: "En {m}m",
 		season_7_5: "Chapitre 7 S5 - Chasseurs de Trésors",
 		banner_title_season5: "CHAPITRE 7 • SAISON 5",
 		variant_fortune: "Fortune",
-variant_cursed: "Maudit",
-bonus_fortune: "Révèle les coffres à proximité",
-bonus_cursed: "Chance accrue de trouver des Sprites rares, subis des dégâts dans l'eau",
-shortcut_secret: "Superposition tresòr (C7S5 uniquement)",
+		variant_cursed: "Maudit",
+		bonus_fortune: "Révèle les coffres à proximité",
+		bonus_cursed: "Chance accrue de trouver des Sprites rares, subis des dégâts dans l'eau",
+		shortcut_secret: "Superposition tresòr (C7S5 uniquement)",
         treasures_title: "💎 Liste des Trésors",
         treasures_draw: "✏️ Dessiner",
         treasures_eraser: "🧹 Gomme",
         treasures_clear: "🗑️ Tout effacer",
         treasures_color: "Couleur:",
-achievement_collector_s5_title: "Collectionneur C7S5",
-achievement_collector_s5_desc: "Obtenez au moins une variante de chaque Sprite de la Saison 5 du Chapitre 7",
-achievement_master_s5_title: "Maître C7S5",
-achievement_master_s5_desc: "Maîtrisez tous les Sprite de la Saison 5 du Chapitre 7 (toutes les variantes au niveau 5)",
-achievement_fortune_collector_title: "Chasseur de Fortune",
-achievement_fortune_collector_desc: "Obtenez toutes les variantes Fortune de tous les Sprite",
-achievement_cursed_collector_title: "Chasseur Maudit",
-achievement_cursed_collector_desc: "Obtenez toutes les variantes Maudites de tous les Sprite",
-season5_subtitle: "SAISON 5 · TERMINÉE",
-shortcut_coin_rain: "Mode Doré (S5 uniquement)",
-treasure_title: "💎 Chasse au Trésor",
-treasure_description: "Ouvrez des coffres dans Battle Royale pour avoir une chance de trouver un trésor doré. De nouveaux trésors chaque semaine.",
-treasure_week_1_title: "SEMAINE 1",
-treasure_week_2_title: "SEMAINE 2",
-treasure_week_3_title: "SEMAINE 3",
-treasure_week_4_title: "SEMAINE 4",
-treasure_week_5_title: "SEMAINE 5",
-treasure_status_live: "En cours",
-treasure_status_coming_soon: "Bientôt",
-treasure_status_ended: "Terminée",
-treasure_found_counter: "{owned}/{total} trouvés",
-treasure_since_date: "Depuis le {date}",
-treasure_starts_on: "Commence le {date}",
-treasure_ended_on: "Terminée le {date}",
-treasure_revealed_on: "Révélée le {date}",
-treasure_in_time: "Dans {d}j {h}h",
-treasure_type_outfit: "Tenue",
-treasure_type_pickaxe: "Pioche",
-treasure_type_jam_track: "Piste Jam",
-treasure_type_loading_screen: "Écran de chargement",
-treasure_type_car: "Voiture",
-treasure_type_back_bling: "Sac à dos",
-treasure_type_item_shop_token: "Jeton Boutique ×2",
-treasure_name_solid_gold_rugshand: "Rugahand en Or Massif",
-treasure_name_solid_gold_gauntlets: "Gantelets en Or Massif",
-treasure_name_no_trespassing: "ENTRÉE INTERDITE",
-treasure_name_plunder_paradise: "Pillage au Paradis",
-treasure_name_golden_llama_crew: "Équipage du Lama Doré",
-treasure_name_pirate_shop_access: "Accès Boutique Pirate",
-treasure_name_solid_gold_uzi: "Lil Uzi Vert en Or Massif",
-treasure_name_lil_uzi_crew: "Équipage de Lil' Uzi",
-treasure_name_london: "London",
-treasure_name_so_kawaii: "Trop Kawaii",
-treasure_name_gold_cadillac: "Cadillac CT5-V Blackwing Dorée",
-treasure_final_event_title: 'ÉVÉNEMENT DE FIN DE CHAPITRE',
-treasure_final_event_desc: 'La chasse se termine ici. Le plus grand trésor de tous les temps est révélé – rassemble ton équipage et sois présent quand tout changera. Termine toutes les quêtes des fragments de carte pour débloquer un écran de chargement.',
-treasure_name_solid_gold_miku: "Miku en Or Massif",
-treasure_name_solid_gold_oscar: "Oscar en Or Massif",
-treasure_unknown_reward: "Inconnu",
-treasure_coming_soon:    "Bientôt",
-treasure_week_ended_toast: "Cette semaine est terminée. Vous ne pouvez plus modifier votre progression.",
-treasure_in_minutes: "Dans {m}m",
+		achievement_collector_s5_title: "Collectionneur C7S5",
+		achievement_collector_s5_desc: "Obtenez au moins une variante de chaque Sprite de la Saison 5 du Chapitre 7",
+		achievement_master_s5_title: "Maître C7S5",
+		achievement_master_s5_desc: "Maîtrisez tous les Sprite de la Saison 5 du Chapitre 7 (toutes les variantes au niveau 5)",
+		achievement_fortune_collector_title: "Chasseur de Fortune",
+		achievement_fortune_collector_desc: "Obtenez toutes les variantes Fortune de tous les Sprite",
+		achievement_cursed_collector_title: "Chasseur Maudit",
+		achievement_cursed_collector_desc: "Obtenez toutes les variantes Maudites de tous les Sprite",
+		season5_subtitle: "SAISON 5 · TERMINÉE",
+		shortcut_coin_rain: "Mode Doré (S5 uniquement)",
+		treasure_title: "💎 Chasse au Trésor",
+		treasure_description: "Ouvrez des coffres dans Battle Royale pour avoir une chance de trouver un trésor doré. De nouveaux trésors chaque semaine.",
+		treasure_week_1_title: "SEMAINE 1",
+		treasure_week_2_title: "SEMAINE 2",
+		treasure_week_3_title: "SEMAINE 3",
+		treasure_week_4_title: "SEMAINE 4",
+		treasure_week_5_title: "SEMAINE 5",
+		treasure_status_live: "En cours",
+		treasure_status_coming_soon: "Bientôt",
+		treasure_status_ended: "Terminée",
+		treasure_found_counter: "{owned}/{total} trouvés",
+		treasure_since_date: "Depuis le {date}",
+		treasure_starts_on: "Commence le {date}",
+		treasure_ended_on: "Terminée le {date}",
+		treasure_revealed_on: "Révélée le {date}",
+		treasure_in_time: "Dans {d}j {h}h",
+		treasure_type_outfit: "Tenue",
+		treasure_type_pickaxe: "Pioche",
+		treasure_type_jam_track: "Piste Jam",
+		treasure_type_loading_screen: "Écran de chargement",
+		treasure_type_car: "Voiture",
+		treasure_type_back_bling: "Sac à dos",
+		treasure_type_item_shop_token: "Jeton Boutique ×2",
+		treasure_name_solid_gold_rugshand: "Rugahand en Or Massif",
+		treasure_name_solid_gold_gauntlets: "Gantelets en Or Massif",
+		treasure_name_no_trespassing: "ENTRÉE INTERDITE",
+		treasure_name_plunder_paradise: "Pillage au Paradis",
+		treasure_name_golden_llama_crew: "Équipage du Lama Doré",
+		treasure_name_pirate_shop_access: "Accès Boutique Pirate",
+		treasure_name_solid_gold_uzi: "Lil Uzi Vert en Or Massif",
+		treasure_name_lil_uzi_crew: "Équipage de Lil' Uzi",
+		treasure_name_london: "London",
+		treasure_name_so_kawaii: "Trop Kawaii",
+		treasure_name_gold_cadillac: "Cadillac CT5-V Blackwing Dorée",
+		treasure_final_event_title: 'ÉVÉNEMENT DE FIN DE CHAPITRE',
+		treasure_final_event_desc: 'La chasse se termine ici. Le plus grand trésor de tous les temps est révélé – rassemble ton équipage et sois présent quand tout changera. Termine toutes les quêtes des fragments de carte pour débloquer un écran de chargement.',
+		treasure_name_solid_gold_miku: "Miku en Or Massif",
+		treasure_name_solid_gold_oscar: "Oscar en Or Massif",
+		treasure_unknown_reward: "Inconnu",
+		treasure_coming_soon:    "Bientôt",
+		treasure_week_ended_toast: "Cette semaine est terminée. Vous ne pouvez plus modifier votre progression.",
+		treasure_in_minutes: "Dans {m}m",
         treasure_name_gold_chevrolet: "Chevrolet Corvette ZR1 Dorée",
         treasure_name_mikus_takarabako: "Takarabako de Miku",
         treasure_name_pppp: "PPPP",
@@ -20766,6 +20875,8 @@ treasure_in_minutes: "Dans {m}m",
         treasure_name_jones_straw_hats: "Jones et les Chapeaux de Paille",
 		treasure_name_solid_gold_high_tide: "Haute Marée et Wavecutter en Or Massif",
 		treasure_name_wellerman: "Wellerman",
+		menu_overrides: "⚡ Liste des Overrides",
+		menu_treasures: "💎 Liste des Trésors",
 	}
 };
 
@@ -24244,6 +24355,30 @@ document.getElementById('filter-season').addEventListener('change', function(e) 
     const btn = document.getElementById('btn-codes-s4');
     if (btn) btn.style.display = (value === '7-4' || value === 'all') ? 'inline-flex' : 'none';
 
+	// ===== BOTTONI CONDIZIONALI MORE =====
+
+	const btnCodes = document.getElementById('btn-codes-s4');
+	const btnOverrides = document.getElementById('btn-overrides');
+	const btnTreasures = document.getElementById('btn-treasures');
+
+	// Lobby Codes: C7S4 oppure All Seasons
+	if (btnCodes) {
+		btnCodes.style.display =
+			(value === '7-4' || value === 'all') ? 'inline-flex' : 'none';
+	}
+
+	// Overrides: C7S4 oppure All Seasons
+	if (btnOverrides) {
+		btnOverrides.style.display =
+			(value === '7-4' || value === 'all') ? 'inline-flex' : 'none';
+	}
+
+	// Treasures: C7S5 oppure All Seasons
+	if (btnTreasures) {
+		btnTreasures.style.display =
+			(value === '7-5' || value === 'all') ? 'inline-flex' : 'none';
+	}
+	
     // Filtri collegati
 
     updateMapSeasonButtonsVisibility();
@@ -24282,8 +24417,25 @@ document.getElementById('filter-season').addEventListener('change', function(e) 
 
 document.addEventListener('DOMContentLoaded', function() {
     const season = document.getElementById('filter-season').value;
-    const btn = document.getElementById('btn-codes-s4');
-    if (season !== '7-4') btn.style.display = 'none';
+
+    const btnCodes = document.getElementById('btn-codes-s4');
+    const btnOverrides = document.getElementById('btn-overrides');
+    const btnTreasures = document.getElementById('btn-treasures');
+
+    if (btnCodes) {
+        btnCodes.style.display =
+            (season === '7-4' || season === 'all') ? 'inline-flex' : 'none';
+    }
+
+    if (btnOverrides) {
+        btnOverrides.style.display =
+            (season === '7-4' || season === 'all') ? 'inline-flex' : 'none';
+    }
+
+    if (btnTreasures) {
+        btnTreasures.style.display =
+            (season === '7-5' || season === 'all') ? 'inline-flex' : 'none';
+    }
 });
 
 /* ---------- EVENT LISTENERS ---------- */
@@ -31531,11 +31683,15 @@ function updateMapSeasonButtonsVisibility() {
 
 function updateLegacyButtonsVisibility() {
     const season = document.getElementById('filter-season').value;
+
+    // Pulsanti delle stagioni precedenti
     const hideForLegacy = (season === '6-1' || season === '6-3');
+
     const btnPlanner = document.getElementById('btn-planner');
-    const btnPod     = document.getElementById('btn-pod');
+    const btnPod = document.getElementById('btn-pod');
+
     if (btnPlanner) btnPlanner.style.display = hideForLegacy ? 'none' : '';
-    if (btnPod)     btnPod.style.display     = hideForLegacy ? 'none' : '';
+    if (btnPod) btnPod.style.display = hideForLegacy ? 'none' : '';
 }
 
 function closeMapModal() {
@@ -31551,6 +31707,18 @@ document.getElementById('btn-garden').addEventListener('click', function() {
   toggleGarden();
 
   document.getElementById('more-menu').style.display = 'none'; // chiude il menu
+});
+
+// Overrides List
+document.getElementById('btn-overrides')?.addEventListener('click', function() {
+    openOverrideList();
+    document.getElementById('more-menu').style.display = 'none';
+});
+
+// Treasures List
+document.getElementById('btn-treasures')?.addEventListener('click', function() {
+    openSecretOverlay();
+    document.getElementById('more-menu').style.display = 'none';
 });
 
 // Calcolatrice
