@@ -10453,6 +10453,360 @@ body.gold-mode .toast {
     border: none !important;
 }
 
+/* =====================================================
+   LIQUID GOLD — esclusivo per la Stagione 5
+   ===================================================== */
+body.season-7-5 .variant-btn.gold .dot {
+    /* Gradiente multi-stop per simulare l'oro liquido (riflessi e ombre profonde) */
+    background: linear-gradient(
+        135deg,
+        #FFF5CC 0%,    /* Highlight (riflesso bianco/oro) */
+        #FFD700 25%,   /* Oro puro e luminoso */
+        #B8860B 50%,   /* Dark Goldenrod (ombra per la profondità) */
+        #FFEA00 75%,   /* Riflesso luminoso secondario */
+        #DAA520 100%   /* Bordo scuro */
+    ) !important;
+}
+
+/* Se hai anche il pallino nella vista "Fan" (la griglia), applichiamo lo stesso effetto */
+body.season-7-5 .fan-dot.dot-gold {
+    background: linear-gradient(
+        135deg,
+        #FFF5CC 0%,
+        #FFD700 25%,
+        #B8860B 50%,
+        #FFEA00 75%,
+        #DAA520 100%
+    ) !important;
+}
+
+/* 1. Colore di base della barra (quando non è in hover) */
+body.season-7-5 .variant-segment.gold,
+body.season-7-5 [data-variant="gold"].variant-segment {
+    background: linear-gradient(
+        135deg,
+        #FFF5CC 0%,
+        #FFD700 25%,
+        #B8860B 50%,
+        #FFEA00 75%,
+        #DAA520 100%
+    ) !important;
+    
+    /* Aggiunge un leggero bagliore alla barra stessa per farla sembrare "liquida" */
+    box-shadow: inset 0 0 0 1px rgba(255,255,255,0.2), 0 0 8px rgba(255, 215, 0, 0.4) !important;
+}
+
+/* 2. Effetto Hover (quando passi il mouse sopra la barra) */
+body.season-7-5 .variant-segment.gold:hover,
+body.season-7-5 [data-variant="gold"].variant-segment:hover {
+    /* Sovrascriviamo il bagliore con i colori dell'oro fuso */
+    box-shadow: 
+        inset 0 0 0 1px rgba(255, 255, 255, 0.4),
+        0 6px 14px rgba(0, 0, 0, 0.5),
+        0 0 16px rgba(255, 215, 0, 0.8) !important;
+}
+
+/* 3. Effetto Hover specifico per la Grid View */
+body.season-7-5 .grid-card .variant-segment.gold:hover {
+    transform: scale(1.15, 1.45);
+    box-shadow: 
+        inset 0 0 0 1px rgba(255, 255, 255, 0.5),
+        0 0 16px rgba(255, 215, 0, 0.8) !important;
+}
+
+/* =====================================================
+   FIX VISIBILITÀ VARIANTI CHIARE (HOLOFOIL E GEM) SU SFONDO OWNED
+   ===================================================== */
+
+/* 1. Aggiunge un leggero bordo/ombra interna a TUTTI i pallini quando sono owned.
+      Questo li fa risaltare sullo sfondo bianco del pulsante. */
+.variant-btn.owned .dot {
+    box-shadow: inset 0 0 0 1px rgba(0, 0, 0, 0.25), 0 1px 3px rgba(0, 0, 0, 0.2);
+}
+
+/* 2. Nuovo gradiente per HOLOFOIL (più iridescente, con tocchi di viola/ciano acceso) */
+.variant-btn.holo .dot {
+    background: linear-gradient(135deg, #DDFBFF 0%, #7EF0FF 30%, #A855F7 65%, #FFFFFF 100%);
+}
+
+/* 3. Nuovo gradiente per GEM (più metallico e scuro, stile platino/zaffiro) */
+.variant-btn.gem .dot {
+    background: linear-gradient(135deg, #4B5563 0%, #D1D5DB 40%, #F9FAFB 60%, #9CA3AF 100%);
+}
+
+/* =====================================================
+   HOLOFOIL — Barre di progresso (Locker e Grid)
+   ===================================================== */
+
+/* 1. Colore di base della barra (Locker e Grid) */
+.variant-segment.holo,
+.variant-segment.holofoil,
+.variant-segment[data-variant="holo"],
+.variant-segment[data-variant="holofoil"] {
+    background: linear-gradient(
+        135deg,
+        #DDFBFF 0%,
+        #7EF0FF 30%,
+        #A855F7 65%,
+        #FFFFFF 100%
+    ) !important;
+    
+    /* Bagliore ciano/iridescente per farlo sembrare olografico */
+    box-shadow: inset 0 0 0 1px rgba(255,255,255,0.4), 0 0 8px rgba(126, 240, 255, 0.4) !important;
+}
+
+/* =====================================================
+   PREMIUM UPGRADE — Pallini varianti (Effetto Lucido/Profondo)
+   ===================================================== */
+
+/* 1. BASIC — Grigio pietra con un riflesso metallico */
+.variant-btn.basic .dot { 
+    background: linear-gradient(135deg, #9CA3AF 0%, #6B7280 40%, #D1D5DB 70%, #4B5563 100%); 
+}
+
+/* 2. GUMMY — Effetto caramella gommosa (più chiaro al centro) */
+.variant-btn.gummy .dot { 
+    background: linear-gradient(135deg, #FF9A9E 0%, #FF7AB6 40%, #FFC2E2 70%, #E63976 100%); 
+}
+
+/* 3. GALAXY — Spazio profondo (viola scuro, blu e stelle bianche) */
+.variant-btn.galaxy .dot { 
+    background: linear-gradient(135deg, #1E1B4B 0%, #7B2CBF 30%, #2FB6FF 70%, #E0E7FF 100%); 
+}
+
+/* 4. CUBE — Kevin the Cube (Viola elettrico con luce al neon) */
+.variant-btn.cube .dot { 
+    background: linear-gradient(135deg, #4A00FF 0%, #7A00FF 30%, #D100D1 60%, #E0B0FF 100%); 
+}
+
+/* 5. QUACK — Papera (Giallo e viola acceso per un tocco folle) */
+.variant-btn.quack .dot { 
+    background: linear-gradient(135deg, #FFD166 0%, #A855F7 40%, #6366F1 75%, #FDE047 100%); 
+}
+
+/* 6. CHEAT — Verde Matrix fosforescente */
+.variant-btn.cheat .dot { 
+    background: linear-gradient(135deg, #00FF87 0%, #00E676 30%, #60EFFF 70%, #00BCD4 100%); 
+}
+
+/* 7. HACKER — Cyberpunk blu scuro con riflesso ciano */
+.variant-btn.hacker .dot { 
+    background: linear-gradient(135deg, #001F3F 0%, #1E3A8A 40%, #00F0FF 80%, #2B4FA0 100%); 
+}
+
+/* 8. BOUNTY — Rosso sangue e rosa neon */
+.variant-btn.bounty .dot { 
+    background: linear-gradient(135deg, #FF0055 0%, #FF2E63 40%, #FF6699 70%, #8B0022 100%); 
+}
+
+/* 9. TRICK — Arancione zucca con ombre violacee (Halloween) */
+.variant-btn.trick .dot { 
+    background: linear-gradient(135deg, #FF9E00 0%, #FF5500 40%, #7B2CBF 80%, #FF9900 100%); 
+}
+
+/* 10. RUBY — Rosso rubino con un taglio di luce bianca */
+.variant-btn.ruby .dot { 
+    background: linear-gradient(135deg, #FF0040 0%, #B30000 40%, #FF6B8A 70%, #4A0000 100%); 
+}
+
+/* 11. AMETHYST — Ametista (Viola scuro con punte di lilla) */
+.variant-btn.amethyst .dot { 
+    background: linear-gradient(135deg, #4A00E0 0%, #8E2DE2 40%, #D8B4FE 70%, #2E0054 100%); 
+}
+
+/* =====================================================
+   VARIANTI SPECIFICHE — Pallini e Barre (Locker & Grid)
+   ===================================================== */
+
+/* 1. GUMMY — Rosa con tocco di verde menta (effetto caramella) */
+.variant-btn.gummy .dot { 
+    background: linear-gradient(135deg, #FF7AB6 0%, #FFC2E2 30%, #86EFAC 70%, #22C55E 100%); 
+}
+.variant-segment.gummy, .variant-segment[data-variant="gummy"] {
+    background: linear-gradient(135deg, #FF7AB6 0%, #FFC2E2 30%, #86EFAC 70%, #22C55E 100%) !important;
+    box-shadow: inset 0 0 0 1px rgba(255,255,255,0.2), 0 0 8px rgba(255, 122, 182, 0.4) !important;
+}
+.variant-segment.gummy:hover, .variant-segment[data-variant="gummy"]:hover {
+    box-shadow: inset 0 0 0 1px rgba(255, 255, 255, 0.6), 0 6px 14px rgba(0, 0, 0, 0.5), 0 0 16px rgba(134, 239, 172, 0.8) !important;
+}
+.grid-card .variant-segment.gummy:hover, .grid-card .variant-segment[data-variant="gummy"]:hover {
+    transform: scale(1.15, 1.45);
+    box-shadow: inset 0 0 0 1px rgba(255, 255, 255, 0.6), 0 0 16px rgba(134, 239, 172, 0.8) !important;
+}
+
+/* 2. GEM — Effetto diamante "frastagliato" (stop netti per simulare le sfaccettature) */
+.variant-btn.gem .dot { 
+    background: linear-gradient(135deg, 
+        #F3F4F6 0%, 
+        #9CA3AF 20%, 
+        #FFFFFF 20%, 
+        #6B7280 45%, 
+        #E5E7EB 45%, 
+        #4B5563 70%, 
+        #D1D5DB 70%, 
+        #FFFFFF 100%
+    ); 
+}
+.variant-segment.gem, .variant-segment[data-variant="gem"] {
+    background: linear-gradient(135deg, 
+        #F3F4F6 0%, 
+        #9CA3AF 20%, 
+        #FFFFFF 20%, 
+        #6B7280 45%, 
+        #E5E7EB 45%, 
+        #4B5563 70%, 
+        #D1D5DB 70%, 
+        #FFFFFF 100%
+    ) !important;
+    box-shadow: inset 0 0 0 1px rgba(255,255,255,0.4), 0 0 8px rgba(255, 255, 255, 0.4) !important;
+}
+.variant-segment.gem:hover, .variant-segment[data-variant="gem"]:hover {
+    box-shadow: inset 0 0 0 1px rgba(255, 255, 255, 0.8), 0 6px 14px rgba(0, 0, 0, 0.5), 0 0 16px rgba(255, 255, 255, 0.8) !important;
+}
+.grid-card .variant-segment.gem:hover, .grid-card .variant-segment[data-variant="gem"]:hover {
+    transform: scale(1.15, 1.45);
+    box-shadow: inset 0 0 0 1px rgba(255, 255, 255, 0.8), 0 0 16px rgba(255, 255, 255, 0.8) !important;
+}
+
+/* 3. CUBE — Viola molto scuro (Kevin the Cube) con bagliore neon */
+.variant-btn.cube .dot { 
+    background: linear-gradient(135deg, #1A0033 0%, #3B0099 40%, #5B008A 70%, #2E0054 100%); 
+}
+.variant-segment.cube, .variant-segment[data-variant="cube"] {
+    background: linear-gradient(135deg, #1A0033 0%, #3B0099 40%, #5B008A 70%, #2E0054 100%) !important;
+    box-shadow: inset 0 0 0 1px rgba(139, 92, 246, 0.3), 0 0 8px rgba(91, 0, 138, 0.6) !important;
+}
+.variant-segment.cube:hover, .variant-segment[data-variant="cube"]:hover {
+    box-shadow: inset 0 0 0 1px rgba(139, 92, 246, 0.6), 0 6px 14px rgba(0, 0, 0, 0.5), 0 0 16px rgba(91, 0, 138, 1) !important;
+}
+.grid-card .variant-segment.cube:hover, .grid-card .variant-segment[data-variant="cube"]:hover {
+    transform: scale(1.15, 1.45);
+    box-shadow: inset 0 0 0 1px rgba(139, 92, 246, 0.6), 0 0 16px rgba(91, 0, 138, 1) !important;
+}
+
+/* 4. HACKER — Blu profondo con infiltrazioni fucsia/viola */
+.variant-btn.hacker .dot { 
+    background: linear-gradient(135deg, #001F3F 0%, #4C1D95 30%, #D946EF 65%, #00F0FF 100%); 
+}
+.variant-segment.hacker, .variant-segment[data-variant="hacker"] {
+    background: linear-gradient(135deg, #001F3F 0%, #4C1D95 30%, #D946EF 65%, #00F0FF 100%) !important;
+    box-shadow: inset 0 0 0 1px rgba(0, 240, 255, 0.3), 0 0 8px rgba(217, 70, 239, 0.5) !important;
+}
+.grid-card .variant-segment.hacker:hover, .grid-card .variant-segment[data-variant="hacker"]:hover {
+    transform: scale(1.15, 1.45);
+    box-shadow: inset 0 0 0 1px rgba(0, 240, 255, 0.6), 0 0 16px rgba(217, 70, 239, 0.9) !important;
+}
+
+/* =====================================================
+   VARIANTI DEFINITIVE — Colori Completi + Hover Pulito
+   ===================================================== */
+
+/* --- 1. COLORI DI BASE DELLE BARRE (Locker e Grid) --- */
+.variant-segment.gold, .variant-segment[data-variant="gold"] { background: linear-gradient(135deg, #FFF5CC 0%, #FFD700 25%, #B8860B 50%, #FFEA00 75%, #DAA520 100%) !important; }
+.variant-segment.holo, .variant-segment[data-variant="holo"] { background: linear-gradient(135deg, #DDFBFF 0%, #7EF0FF 30%, #A855F7 65%, #FFFFFF 100%) !important; }
+.variant-segment.gummy, .variant-segment[data-variant="gummy"] { background: linear-gradient(135deg, #FF7AB6 0%, #FFC2E2 30%, #86EFAC 70%, #22C55E 100%) !important; }
+.variant-segment.gem, .variant-segment[data-variant="gem"] { background: linear-gradient(135deg, #F3F4F6 0%, #9CA3AF 20%, #FFFFFF 20%, #6B7280 45%, #E5E7EB 45%, #4B5563 70%, #D1D5DB 70%, #FFFFFF 100%) !important; }
+.variant-segment.cube, .variant-segment[data-variant="cube"] { background: linear-gradient(135deg, #1A0033 0%, #3B0099 40%, #5B008A 70%, #2E0054 100%) !important; }
+.variant-segment.hacker, .variant-segment[data-variant="hacker"] { background: linear-gradient(135deg, #001F3F 0%, #4C1D95 30%, #D946EF 65%, #00F0FF 100%) !important; }
+
+/* Aggiunte le mancanti */
+.variant-segment.quack, .variant-segment[data-variant="quack"] { background: linear-gradient(135deg, #FFD166 0%, #A855F7 40%, #6366F1 75%, #FDE047 100%) !important; }
+.variant-segment.cheat, .variant-segment[data-variant="cheat"] { background: linear-gradient(135deg, #00FF87 0%, #00E676 30%, #60EFFF 70%, #00BCD4 100%) !important; }
+.variant-segment.bounty, .variant-segment[data-variant="bounty"] { background: linear-gradient(135deg, #FF0055 0%, #FF2E63 40%, #FF6699 70%, #8B0022 100%) !important; }
+.variant-segment.trick, .variant-segment[data-variant="trick"] { background: linear-gradient(135deg, #FF9E00 0%, #FF5500 40%, #7B2CBF 80%, #FF9900 100%) !important; }
+
+/* --- 2. EFFETTO HOVER PULITO (Rimosso l'highlight colorato) --- */
+
+/* Per la vista Locker */
+.variant-segment.gold:hover, .variant-segment.holo:hover, 
+.variant-segment.gummy:hover, .variant-segment.gem:hover, 
+.variant-segment.cube:hover, .variant-segment.hacker:hover,
+.variant-segment.quack:hover, .variant-segment.cheat:hover, 
+.variant-segment.bounty:hover, .variant-segment.trick:hover {
+    /* Mantiene l'effetto sollevamento e luminosità, ma usa l'ombra base scura senza bagliori colorati */
+    box-shadow: inset 0 0 0 1px rgba(255,255,255,0.35), 0 6px 14px rgba(0,0,0,0.5) !important;
+}
+
+/* Per la vista Grid */
+.grid-card .variant-segment.gold:hover, .grid-card .variant-segment.holo:hover,
+.grid-card .variant-segment.gummy:hover, .grid-card .variant-segment.gem:hover,
+.grid-card .variant-segment.cube:hover, .grid-card .variant-segment.hacker:hover,
+.grid-card .variant-segment.quack:hover, .grid-card .variant-segment.cheat:hover,
+.grid-card .variant-segment.bounty:hover, .grid-card .variant-segment.trick:hover {
+    /* Mantiene l'effetto di espansione, ma ombra pulita */
+    box-shadow: inset 0 0 0 1px rgba(255,255,255,0.5) !important;
+}
+
+/* =====================================================
+   FIX SPECIFICI RICHIESTI (Sovrascrivono i precedenti)
+   ===================================================== */
+
+/* 1. GOLD: Ripristina l'oro classico per tutte le stagioni... */
+.variant-segment.gold, 
+.variant-segment[data-variant="gold"] {
+    background: linear-gradient(90deg, #FFD166, #FFB84D) !important;
+}
+
+/* ...e applica il Liquid Gold SOLO ed ESCLUSIVAMENTE nella Stagione 5 */
+body.season-7-5 .variant-segment.gold, 
+body.season-7-5 .variant-segment[data-variant="gold"] {
+    background: linear-gradient(135deg, #FFF5CC 0%, #FFD700 25%, #B8860B 50%, #FFEA00 75%, #DAA520 100%) !important;
+}
+
+/* 2. GALAXY: Allinea il colore della barra a quello del dot */
+.variant-segment.galaxy, 
+.variant-segment[data-variant="galaxy"] {
+    background: linear-gradient(135deg, #1E1B4B 0%, #7B2CBF 30%, #2FB6FF 70%, #E0E7FF 100%) !important;
+}
+
+/* 3. TRICK OR TREAT: Rimuove il viola e lo sostituisce con un rosso scuro/arancio (sia dot che barra) */
+.variant-btn.trick .dot {
+    background: linear-gradient(135deg, #FF9E00 0%, #FF5500 40%, #B30000 80%, #FF9900 100%) !important;
+}
+.variant-segment.trick, 
+.variant-segment[data-variant="trick"] {
+    background: linear-gradient(135deg, #FF9E00 0%, #FF5500 40%, #B30000 80%, #FF9900 100%) !important;
+}
+
+/* 4. BASIC: Allinea il colore della barra a quello del dot (grigio metallizzato) */
+.variant-segment.basic, 
+.variant-segment[data-variant="basic"] {
+    background: linear-gradient(135deg, #9CA3AF 0%, #6B7280 40%, #D1D5DB 70%, #4B5563 100%) !important;
+}
+
+/* =====================================================
+   FIX DEFINITIVI (Rimozione Hover e Bounty Hunter)
+   ===================================================== */
+
+/* 1. RIMOZIONE HOVER COLORATO (Gummy, Holofoil, Loot Hacker) */
+/* Vista Locker */
+.variant-segment.gummy:hover, 
+.variant-segment[data-variant="gummy"]:hover,
+.variant-segment.holo:hover, 
+.variant-segment[data-variant="holo"]:hover,
+.variant-segment.hacker:hover, 
+.variant-segment[data-variant="hacker"]:hover {
+    box-shadow: inset 0 0 0 1px rgba(255,255,255,0.35), 0 6px 14px rgba(0,0,0,0.5) !important;
+}
+/* Vista Grid */
+.grid-card .variant-segment.gummy:hover, 
+.grid-card .variant-segment[data-variant="gummy"]:hover,
+.grid-card .variant-segment.holo:hover, 
+.grid-card .variant-segment[data-variant="holo"]:hover,
+.grid-card .variant-segment.hacker:hover, 
+.grid-card .variant-segment[data-variant="hacker"]:hover {
+    box-shadow: inset 0 0 0 1px rgba(255,255,255,0.5) !important;
+}
+
+/* 2. NUOVI COLORI PER BOUNTY HUNTER (Spirale cosmica: viola scuro, magenta, blu/rosso) */
+.variant-btn.bounty .dot {
+    background: linear-gradient(135deg, #1A002A 0%, #7B2CBF 35%, #D946EF 70%, #FF2E63 100%) !important;
+}
+.variant-segment.bounty, 
+.variant-segment[data-variant="bounty"] {
+    background: linear-gradient(135deg, #1A002A 0%, #7B2CBF 35%, #D946EF 70%, #FF2E63 100%) !important;
+}
+
 </style>
 </head>
 <style>
