@@ -18146,6 +18146,9 @@ const TRANSLATIONS = {
 		obtain_lobby_code: "🎮 Codice Lobby",
 		obtain_cheat_locator: "Codice dei trucchi",
 		obtain_sprite_chest: "Cassa Spiritello",
+		obtain_fortune_chest: 'Cassa Spiritello Fortuna',
+        obtain_liquid_gold_chest: 'Cassa Spiritello Oro Liquido',
+        obtain_cursed_relic_chest: 'Cassa Spiritello Maledetto',
 		level_chests_eliminations: "📦 Forzieri | 💀 Eliminazioni",
 		level_victory_royale: "Vittoria Reale",
 		level_consumables_shield: "Consumabili (Scudo)",
@@ -32757,8 +32760,34 @@ function getObtainDisplay(sp, variant) {
     const lang = currentLang;
     let html = '—';
     let cls = 'badge-default';
+    
+    // 1. Controlla se siamo nella Stagione 5 del Capitolo 7
+    const isS75 = document.body.classList.contains('season-7-5');
+
     if (sp.obtain && sp.obtain[variant]) {
         const method = sp.obtain[variant];
+
+        // 2. OVERRIDE PER LA STAGIONE 5 (Capitolo 7)
+        if (isS75) {
+            if (variant === 'fortune' || method === 'fortune-chest') {
+                const icon = `<img src="assets/ui/fortune-relic-chest.png" style="width:16px;height:16px;vertical-align:middle;margin-right:4px;" alt="Fortune Relic Chest">`;
+                html = `${icon} ${TRANSLATIONS[lang]?.obtain_fortune_chest || 'Fortune Relic Chest'}`;
+                cls = 'badge-fortune-chest';
+                return { text: html, cls };
+            } else if (variant === 'gold' || variant === 'liquid-gold') {
+                const icon = `<img src="assets/ui/liquid-gold-chest.png" style="width:16px;height:16px;vertical-align:middle;margin-right:4px;" alt="Liquid Gold Chest">`;
+                html = `${icon} ${TRANSLATIONS[lang]?.obtain_liquid_gold_chest || 'Liquid Gold Chest'}`;
+                cls = 'badge-sprite-chest'; 
+                return { text: html, cls };
+            } else if (variant === 'cursed') {
+                const icon = `<img src="assets/ui/cursed-relic-chest.png" style="width:16px;height:16px;vertical-align:middle;margin-right:4px;" alt="Cursed Relic Chest">`;
+                html = `${icon} ${TRANSLATIONS[lang]?.obtain_cursed_relic_chest || 'Cursed Relic Chest'}`;
+                cls = 'badge-sprite-chest';
+                return { text: html, cls };
+            }
+        }
+
+        // 3. LOGICA STANDARD (Per tutte le altre stagioni o varianti)
         if (method === 'lobby') {
             html = TRANSLATIONS[lang]?.obtain_lobby_code || '🎮 Lobby Code';
             cls = 'badge-code';
@@ -32767,9 +32796,6 @@ function getObtainDisplay(sp, variant) {
             html = `${icon} ${TRANSLATIONS[lang]?.obtain_sprite_chest || 'Sprite Chest'}`;
             cls = 'badge-sprite-chest';
         } else if (method === 'fortune-chest') {
-
-            // NUOVO: Cassa Reliquia del Fortuna
-
             const icon = `<img src="assets/ui/fortune-relic-chest.png" style="width:16px;height:16px;vertical-align:middle;margin-right:4px;" alt="Fortune Relic Chest">`;
             html = `${icon} ${TRANSLATIONS[lang]?.obtain_fortune_chest || 'Fortune Relic Chest'}`;
             cls = 'badge-fortune-chest';
