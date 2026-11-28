@@ -10912,6 +10912,45 @@ body.season-7-5 .variant-segment[data-variant="gold"] {
     transform: translateY(-3px) scale(1.05);
 }
 
+/* =====================================================
+   OGGETTI REPLAY (Ispirato al Tick Oro della Season 5)
+   ===================================================== */
+
+/* Bordo azzurro della card */
+.treasure-item-card.checked.checked-replay {
+    border: 2px solid #00D4FF !important;
+    box-shadow: 0 0 15px rgba(0, 212, 255, 0.2) !important;
+}
+
+/* Cronometro azzurro in alto a destra (stessa logica del tick oro) */
+.treasure-item-card.checked.checked-replay::after {
+    content: '⏱️'; /* Cronometro invece della spunta ✓ */
+    position: absolute;
+    
+    /* Posizione: usa -8px o -12px per farlo sporgere fuori dalla card come nell'immagine */
+    top: -8px; 
+    right: -8px; 
+    
+    width: 24px;  /* Leggermente più grande per far entrare il cronometro */
+    height: 24px;
+    border-radius: 50%;
+    
+    /* Gradiente Azzurro (come quello oro, ma in azzurro) */
+    background: linear-gradient(135deg, #00D4FF, #0099CC);
+    color: #04121a; /* Colore scuro per l'emoji */
+    font-size: 12px;
+    font-weight: 900;
+    
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    /* Bagliore azzurro (identico all'oro, ma azzurro) */
+    box-shadow: 0 0 10px rgba(0, 212, 255, 0.6);
+    pointer-events: none;
+    z-index: 10;
+}
+
 </style>
 </head>
 <style>
@@ -11621,6 +11660,7 @@ body.retro-mode select option {
     background: #000800 !important;
     color: #33ff33 !important;
 }
+
 </style>
 <body>
 <div id="bg-layer-a" class="bg-layer" aria-hidden="true"></div>
@@ -32239,6 +32279,7 @@ const TREASURE_HUNT_DATA = [
         weekNumber: 1,
         startDate: '2026-11-01T14:59:00+01:00',
         endDate:   '2026-11-08T14:59:00+01:00',
+		isReturning: true,
         teaserImage: null,
         crewImg: 'assets/icons/asap_rocky.png',
         items: [
@@ -32255,6 +32296,7 @@ const TREASURE_HUNT_DATA = [
         weekNumber: 2,
         startDate: '2026-11-08T14:59:00+01:00',
         endDate:   '2026-11-15T14:59:00+01:00',
+		isReturning: true,
         teaserImage: null,
         crewImg: 'assets/icons/lil_uzi_vert.png',
         items: [
@@ -32271,6 +32313,7 @@ const TREASURE_HUNT_DATA = [
         weekNumber: 3,
         startDate: '2026-11-15T14:59:00+01:00',
         endDate:   '2026-11-22T14:59:00+01:00',
+		isReturning: true,
         teaserImage: null,
         crewImg: 'assets/icons/miku.png',
         items: [
@@ -32286,7 +32329,8 @@ const TREASURE_HUNT_DATA = [
 		id: 'week4',
 		weekNumber: 4,
 		startDate: '2026-11-22T14:59:00+01:00',
-		endDate:   '2026-11-29T14:59:00+01:00',
+		endDate:   '2026-11-28T14:59:00+01:00',
+		isReturning: true,
 		teaserImage: null,
 		crewImg: 'assets/icons/oscar.png',
 		items: [
@@ -32639,64 +32683,88 @@ function renderTreasureChecklist() {
             grid.className = 'treasure-items-grid';
             grid.id = 'grid_' + week.id;
 
-                        // ─── 1. Items REALI ───
-            week.items.forEach(item => {
-                const isChecked = checkedItems.includes(item.id);
-                const card = document.createElement('div');
-                card.className = 'treasure-item-card';
-                if (isChecked) card.classList.add('checked');
-                if (isUpcoming) card.classList.add('disabled');
+            // ─── 1. Items REALI ───
+			week.items.forEach(item => {
+				// Recuperiamo i dati dal localStorage
+				let checkedItems = [];
+				let replayItems = [];
+				try { 
+					checkedItems = JSON.parse(localStorage.getItem('treasure_checked_items')) || []; 
+					replayItems = JSON.parse(localStorage.getItem('treasure_replay_items')) || [];
+				} catch(e) {}
 
-                const itemName = getTreasureText(item, 'name', lang);
-                const itemType = getTreasureText(item, 'type', lang);
+				const isChecked = checkedItems.includes(item.id);
+				const isReplayChecked = replayItems.includes(item.id); // <-- Nuovo controllo
 
-                const dropRateHTML = item.dropRate ? `<div style="font-size:11px;color:#9aa6b2;margin-top:4px;font-weight:600;">📦 1 in ${item.dropRate}</div>` : '';
+				const card = document.createElement('div');
+				card.className = 'treasure-item-card';
+				
+				// Applichiamo le classi di stato
+				if (isChecked) card.classList.add('checked');
+				if (isReplayChecked) card.classList.add('checked-replay'); // <-- Classe per il bordo azzurro
+				if (isUpcoming) card.classList.add('disabled');
 
-                // Generiamo un ID univoco per il container dell'immagine
-                const imgId = 'img_' + item.id;
+				const isObtainable = isLive || (isEnded && week.isReturning === true);
 
-                card.innerHTML = `
-                    <div id="${imgId}_container" style="position:relative; width:100%;">
-                        <img src="${item.img}" class="treasure-item-img"
-                             onerror="
-                                 this.style.display='none';
-                                 document.getElementById('${imgId}_container').innerHTML = \`
-                                     <div class='treasure-placeholder-box'>
-                                         <span class='treasure-placeholder-question'>?</span>
-                                     </div>
-                                 \`;
-                             ">
-                    </div>
-                    <div class="treasure-item-name">${itemName}</div>
-                    <div class="treasure-item-type">${itemType}</div>
-                    ${dropRateHTML}
-                `;
+				const itemName = getTreasureText(item, 'name', lang);
+				const itemType = getTreasureText(item, 'type', lang);
 
-                // Solo le settimane LIVE sono cliccabili
-                if (isLive) {
-                    card.addEventListener('click', () => {
-                        let current = [];
-                        try { current = JSON.parse(localStorage.getItem('treasure_checked_items')) || []; }
-                        catch (e) {}
+				const dropRateHTML = item.dropRate ? `<div style="font-size:11px;color:#9aa6b2;margin-top:4px;font-weight:600;">📦 1 in ${item.dropRate}</div>` : '';
+				const imgId = 'img_' + item.id;
 
-                        if (current.includes(item.id)) {
-                            current = current.filter(id => id !== item.id);
-                        } else {
-                            current.push(item.id);
-                        }
-                        localStorage.setItem('treasure_checked_items', JSON.stringify(current));
-                        renderTreasureChecklist();
-                    });
-                } else if (isEnded) {
-                    card.addEventListener('click', () => {
-                        if (typeof showToast === 'function') {
-                            showToast(t('treasure_week_ended_toast', 'This week has ended. You can no longer modify your progress.'));
-                        }
-                    });
-                }
+				card.innerHTML = `
+					<div id="${imgId}_container" style="position:relative; width:100%;">
+						<img src="${item.img}" class="treasure-item-img"
+							 onerror="
+								 this.style.display='none';
+								 document.getElementById('${imgId}_container').innerHTML = \`
+									 <div class='treasure-placeholder-box'>
+										 <span class='treasure-placeholder-question'>?</span>
+									 </div>
+								 \`;
+							 ">
+					</div>
+					<div class="treasure-item-name">${itemName}</div>
+					<div class="treasure-item-type">${itemType}</div>
+					${dropRateHTML}
+				`;
 
-                grid.appendChild(card);
-            });
+				if (isObtainable) {
+					card.addEventListener('click', () => {
+						let current = [];
+						let replays = [];
+						try { 
+							current = JSON.parse(localStorage.getItem('treasure_checked_items')) || []; 
+							replays = JSON.parse(localStorage.getItem('treasure_replay_items')) || []; 
+						} catch (e) {}
+
+						if (current.includes(item.id)) {
+							// Se era già spuntato, lo togliamo (sia normale che replay)
+							current = current.filter(id => id !== item.id);
+							replays = replays.filter(id => id !== item.id);
+						} else {
+							// Se lo spuntiamo ORA
+							current.push(item.id);
+							// Se la settimana è finita ma è ritornata, lo segniamo come "Replay"
+							if (isEnded && week.isReturning === true) {
+								replays.push(item.id);
+							}
+						}
+						
+						localStorage.setItem('treasure_checked_items', JSON.stringify(current));
+						localStorage.setItem('treasure_replay_items', JSON.stringify(replays));
+						renderTreasureChecklist();
+					});
+				} else if (isEnded) {
+					card.addEventListener('click', () => {
+						if (typeof showToast === 'function') {
+							showToast(t('treasure_week_ended_toast', 'This week has ended. You can no longer modify your progress.'));
+						}
+					});
+				}
+
+				grid.appendChild(card);
+			});
 
             // ─── 2. Placeholder "?" per ricompense sconosciute ───
             for (let i = 0; i < placeholderCount; i++) {
